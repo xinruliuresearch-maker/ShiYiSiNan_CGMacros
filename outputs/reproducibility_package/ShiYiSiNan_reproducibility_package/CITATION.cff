@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript and the original public datasets."
+title: "ShiYiSiNan Diet-to-Physiology Modeling Reproducibility Package"
+authors:
+  - family-names: Liu
+    given-names: Xinru
+version: "0.1.0"
+date-released: "2026-06-01"
