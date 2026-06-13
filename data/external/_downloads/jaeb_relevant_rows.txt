@@ -1,0 +1,80 @@
+﻿
+  data\external\_downloads\jaeb_diabetes.html:641:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:642:		</tr><tr align="left" valign="top" style="color:#104D63;background-color:White;border-style:None;">
+> data\external\_downloads\jaeb_diabetes.html:643:			<td style="width:300px;">A Study to Assess Continuous Glucose Sensor Profiles in Healthy Non-Diabetic Participants Aged &lt;7 Years</td><td style="width:50px;">&nbsp;</td><td 
+style="width:50px;">2021</td><td style="width:50px;">2021</td><td>
+  data\external\_downloads\jaeb_diabetes.html:644:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl09_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/CGMNDYoungChildren.zip" />
+  data\external\_downloads\jaeb_diabetes.html:645:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:646:                                    <a id="ctl00_CphMain_GridViewPublicDataSets_ctl09_LinkDataset" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl09$LinkDataset&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63; word-break:break-all;">CGMNDYoungChildren.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:647:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:648:                                    <span style="color:Red;float: right">*</span></i>
+  data\external\_downloads\jaeb_diabetes.html:649:                            </td><td>
+> data\external\_downloads\jaeb_diabetes.html:650:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl09_DownloadDocument" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/Nondiabetic&#32;Sensor&#32;Young&#32;Children&#32;Protocol&#32;V1.1&#32;19Jan2021.pdf.zip" />
+  data\external\_downloads\jaeb_diabetes.html:651:                                <i>
+> data\external\_downloads\jaeb_diabetes.html:652:                                    <a onclick="DownloadDataDocument(this);&#32;return&#32;false;" id="ctl00_CphMain_GridViewPublicDataSets_ctl09_LinkDocument" 
+data-url="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/Nondiabetic&#32;Sensor&#32;Young&#32;Children&#32;Protocol&#32;V1.1&#32;19Jan2021.pdf.zip" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl09$LinkDocument&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63;word-break:break-all;">Nondiabetic Sensor Young Children Protocol V1.1 
+19Jan2021.pdf.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:653:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:654:		</tr><tr class="alternaterowstyle" align="left" valign="top" style="color:#104D63;background-color:Beige;border-style:None;">
+  data\external\_downloads\jaeb_diabetes.html:655:			<td style="width:300px;">Glucose Levels Across Maternity</td><td style="width:50px;">&nbsp;</td><td style="width:50px;">2020</td><td style="width:50px;">2021</td><td>
+  data\external\_downloads\jaeb_diabetes.html:656:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl10_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/GLAM&#32;Public&#32;Dataset.zip" />
+  data\external\_downloads\jaeb_diabetes.html:657:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:833:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:834:		</tr><tr align="left" valign="top" style="color:#104D63;background-color:White;border-style:None;">
+> data\external\_downloads\jaeb_diabetes.html:835:			<td style="width:300px;">Glucose Sensor Profiles in Healthy Non-Diabetic Subjects</td><td style="width:50px;">&nbsp;</td><td style="width:50px;">2017</td><td 
+style="width:50px;">2017</td><td>
+  data\external\_downloads\jaeb_diabetes.html:836:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl25_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/CGMND-af920dee-2d6e-4436-bc89-7a7b51239837.zip" />
+  data\external\_downloads\jaeb_diabetes.html:837:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:838:                                    <a id="ctl00_CphMain_GridViewPublicDataSets_ctl25_LinkDataset" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl25$LinkDataset&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63; word-break:break-all;">CGMND.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:839:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:840:                                    <span style="color:Red;float: right">*</span></i>
+  data\external\_downloads\jaeb_diabetes.html:841:                            </td><td>
+> data\external\_downloads\jaeb_diabetes.html:842:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl25_DownloadDocument" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/2017-06-25&#32;Nondiabetic&#32;Sensor&#32;Protocol&#32;Version&#32;1.1&#32;clean.pdf-af920dee-2d6e-4436-bc89-7a7b51239837.zip" />
+  data\external\_downloads\jaeb_diabetes.html:843:                                <i>
+> data\external\_downloads\jaeb_diabetes.html:844:                                    <a onclick="DownloadDataDocument(this);&#32;return&#32;false;" id="ctl00_CphMain_GridViewPublicDataSets_ctl25_LinkDocument" 
+data-url="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/2017-06-25&#32;Nondiabetic&#32;Sensor&#32;Protocol&#32;Version&#32;1.1&#32;clean.pdf-af920dee-2d6e-4436-bc89-7a7b51239837.zip" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl25$LinkDocument&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63;word-break:break-all;">2017-06-25 Nondiabetic Sensor Protocol Version 1.1 
+clean.pdf.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:845:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:846:		</tr><tr class="alternaterowstyle" align="left" valign="top" style="color:#104D63;background-color:Beige;border-style:None;">
+  data\external\_downloads\jaeb_diabetes.html:847:			<td style="width:300px;">Mini-Dose Glucagon for Adults with Type 1 Diabetes: A Pilot Study to Assess the Use of Mini-Dose Glucagon to Prevent Exercise-Induced Hypoglycemia in Type 1 
+Diabetes</td><td style="width:50px;">NCT02660242</td><td style="width:50px;">2016</td><td style="width:50px;">2017</td><td>
+  data\external\_downloads\jaeb_diabetes.html:848:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl26_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/MiniDoseExerciseDataset-9e969a25-859e-416f-9905-2d5a2b0e7f7a.zip" />
+  data\external\_downloads\jaeb_diabetes.html:849:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:881:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:882:		</tr><tr align="left" valign="top" style="color:#104D63;background-color:White;border-style:None;">
+> data\external\_downloads\jaeb_diabetes.html:883:			<td style="width:300px;">Eating Patterns and Food Intake of Persons with Type 1 Diabetes Study</td><td style="width:50px;">&nbsp;</td><td style="width:50px;">2015</td><td 
+style="width:50px;">2016</td><td>
+> data\external\_downloads\jaeb_diabetes.html:884:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl29_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/NutritionDataset_2025-02-19.zip" />
+  data\external\_downloads\jaeb_diabetes.html:885:                                <i>
+> data\external\_downloads\jaeb_diabetes.html:886:                                    <a id="ctl00_CphMain_GridViewPublicDataSets_ctl29_LinkDataset" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl29$LinkDataset&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63; word-break:break-all;">NutritionDataset_2025-02-19.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:887:                                <i>
+  data\external\_downloads\jaeb_diabetes.html:888:                                    </i>
+  data\external\_downloads\jaeb_diabetes.html:889:                            </td><td>
+> data\external\_downloads\jaeb_diabetes.html:890:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl29_DownloadDocument" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/Eating&#32;Pattern&#32;Protocol&#32;6-21-14-38ed4eff-62cd-405a-90e6-58dfcf9fe334.zip" />
+  data\external\_downloads\jaeb_diabetes.html:891:                                <i>
+> data\external\_downloads\jaeb_diabetes.html:892:                                    <a onclick="DownloadDataDocument(this);&#32;return&#32;false;" id="ctl00_CphMain_GridViewPublicDataSets_ctl29_LinkDocument" 
+data-url="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Documents/Eating&#32;Pattern&#32;Protocol&#32;6-21-14-38ed4eff-62cd-405a-90e6-58dfcf9fe334.zip" 
+href="javascript:__doPostBack(&#39;ctl00$CphMain$GridViewPublicDataSets$ctl29$LinkDocument&#39;,&#39;&#39;)" style="display:inline-block;width:200px;color: #104D63;word-break:break-all;">Eating Pattern Protocol 6-21-14.zip</a></i>
+  data\external\_downloads\jaeb_diabetes.html:893:                            </td>
+  data\external\_downloads\jaeb_diabetes.html:894:		</tr><tr class="alternaterowstyle" align="left" valign="top" style="color:#104D63;background-color:Beige;border-style:None;">
+  data\external\_downloads\jaeb_diabetes.html:895:			<td style="width:300px;">A Randomized Trial Comparing Continuous Glucose Monitoring With and Without Routine Blood Glucose Monitoring in Adults with Type 1 Diabetes</td><td 
+style="width:50px;">NCT02258373</td><td style="width:50px;">2015</td><td style="width:50px;">2016</td><td>
+  data\external\_downloads\jaeb_diabetes.html:896:                                <img id="ctl00_CphMain_GridViewPublicDataSets_ctl30_DownloadDataset" src="../JaebResource/Images/download.png" 
+alt="https://live-jchrpublicdatasets.s3.amazonaws.com/Diabetes/Public&#32;Datasets/Replace-BG&#32;Dataset.zip" />
+  data\external\_downloads\jaeb_diabetes.html:897:                                <i>
+
+
+

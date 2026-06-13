@@ -1,0 +1,8 @@
+DeidentID|RecID|AE_Description|AE_StartDate|AE_StopDate|AE_Type|AESerious|AE_Intensity|AE_Related|AEActionTaken|AE_OtherWritten|AEOutcome
+32|1|Pain 8 out of 10 at insertion|1/15/2000|1/15/2000|Expected|No|Moderate|Very Likely|None|NA|Recovered
+8|4|Pain 10 out of 10 at insertion|1/23/2000|1/23/2000|Expected|No|Moderate|Very Likely|None|NA|Recovered
+33|5|Excessive bleeding|2/10/2000|2/10/2000|Expected|No|Mild|Very Likely|Other|Applied pressure cold pack|Recovered
+38|6|Pain 10 out of 10|2/17/2000|2/17/2000|Expected|No|Moderate|Very Likely|None|NA|Recovered
+6|7|Excessive bleeding|3/16/2000|3/16/2000|Expected|No|Mild|Very Likely|None|NA|Recovered
+43|2|Excessive bleeding|1/13/2000|1/13/2000|Expected|No|Mild|Very Likely|None|NA|Recovered
+23|3|Pain 10 out of 10|2/17/2000|2/17/2000|Expected|No|Moderate|Very Likely|None|NA|Recovered

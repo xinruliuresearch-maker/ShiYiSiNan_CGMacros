@@ -1,0 +1,623 @@
+{
+  "dataset": [
+    {
+      "Dataset": "NHANES_2013_2018",
+      "Analytic role": "MSI construction / internal analysis",
+      "Participants": 5267,
+      "Meals/events": NaN,
+      "MSI available": 2491.0,
+      "Median MSI": -0.101,
+      "High MSI tertile N": 830.0
+    },
+    {
+      "Dataset": "CGMacros_subjects",
+      "Analytic role": "MSI construction / internal analysis",
+      "Participants": 40,
+      "Meals/events": 1498.0,
+      "MSI available": 40.0,
+      "Median MSI": 0.325,
+      "High MSI tertile N": 13.0
+    },
+    {
+      "Dataset": "Stanford_CGMDB",
+      "Analytic role": "standardized food challenges",
+      "Participants": 38,
+      "Meals/events": 588.0,
+      "MSI available": NaN,
+      "Median MSI": NaN,
+      "High MSI tertile N": NaN
+    },
+    {
+      "Dataset": "T1D_UOM",
+      "Analytic role": "T1D logged meals",
+      "Participants": 15,
+      "Meals/events": 3820.0,
+      "MSI available": NaN,
+      "Median MSI": NaN,
+      "High MSI tertile N": NaN
+    },
+    {
+      "Dataset": "Jaeb_CGMND_HealthyAdults",
+      "Analytic role": "healthy adult CGM readings",
+      "Participants": 169,
+      "Meals/events": 383117.0,
+      "MSI available": NaN,
+      "Median MSI": NaN,
+      "High MSI tertile N": NaN
+    }
+  ],
+  "nhanes_key": [
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "MSI PCA",
+      "Beta": 0.156767250570138,
+      "CI low": 0.1003295258321882,
+      "CI high": 0.2132049753080876,
+      "P": 0.0002831235126943,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.157 (0.100, 0.213)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "MSI core",
+      "Beta": 0.182788204268863,
+      "CI low": 0.1090649771974986,
+      "CI high": 0.2565114313402273,
+      "P": 0.0005029944456931,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.183 (0.109, 0.257)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "ln(HOMA-IR)",
+      "Beta": 0.218409889518229,
+      "CI low": 0.1292547470436492,
+      "CI high": 0.3075650319928087,
+      "P": 0.0005519664129867,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.218 (0.129, 0.308)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "MSI without BMI",
+      "Beta": 0.171692085504188,
+      "CI low": 0.0997966234274009,
+      "CI high": 0.2435875475809751,
+      "P": 0.00067086497399,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.172 (0.100, 0.244)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "HbA1c",
+      "Beta": 0.134569442578456,
+      "CI low": 0.0787077670780018,
+      "CI high": 0.1904311180789101,
+      "P": 0.0008144732062088,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.135 (0.079, 0.190)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "% oxidative /10 pp",
+      "Outcome": "MSI core",
+      "Beta": 0.168407623229052,
+      "CI low": 0.0718137673843491,
+      "CI high": 0.2650014790737549,
+      "P": 0.0057517772104713,
+      "q": 0.016123633472318,
+      "Estimate (95% CI)": "0.168 (0.072, 0.265)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "% oxidative /10 pp",
+      "Outcome": "MSI without BMI",
+      "Beta": 0.168379406918104,
+      "CI low": 0.0699662948069353,
+      "CI high": 0.2667925190292726,
+      "P": 0.0064381087821174,
+      "q": 0.016123633472318,
+      "Estimate (95% CI)": "0.168 (0.070, 0.267)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "% oxidative /10 pp",
+      "Outcome": "ln(HOMA-IR)",
+      "Beta": 0.181973437516822,
+      "CI low": 0.0743335604334307,
+      "CI high": 0.2896133146002132,
+      "P": 0.0069101286309934,
+      "q": 0.016123633472318,
+      "Estimate (95% CI)": "0.182 (0.074, 0.290)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "% oxidative /10 pp",
+      "Outcome": "MSI PCA",
+      "Beta": 0.105328710261454,
+      "CI low": 0.0379700835563829,
+      "CI high": 0.1726873369665251,
+      "P": 0.0119452067256964,
+      "q": 0.0228044855672387,
+      "Estimate (95% CI)": "0.105 (0.038, 0.173)",
+      "q<0.05": true
+    },
+    {
+      "Exposure": "% oxidative /10 pp",
+      "Outcome": "HbA1c",
+      "Beta": 0.109640793884053,
+      "CI low": 0.0329679301059851,
+      "CI high": 0.1863136576621208,
+      "P": 0.0187056366620271,
+      "q": 0.030216797684813,
+      "Estimate (95% CI)": "0.110 (0.033, 0.186)",
+      "q<0.05": true
+    }
+  ],
+  "nhanes_primary_msi": [
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "MSI core",
+      "Beta": 0.182788204268863,
+      "CI low": 0.1090649771974986,
+      "CI high": 0.2565114313402273,
+      "P": 0.0005029944456931,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.183 (0.109, 0.257)",
+      "q<0.05": true
+    }
+  ],
+  "nhanes_primary_homa": [
+    {
+      "Exposure": "ln oxidative/MEHP",
+      "Outcome": "ln(HOMA-IR)",
+      "Beta": 0.218409889518229,
+      "CI low": 0.1292547470436492,
+      "CI high": 0.3075650319928087,
+      "P": 0.0005519664129867,
+      "q": 0.0034207874660773,
+      "Estimate (95% CI)": "0.218 (0.129, 0.308)",
+      "q<0.05": true
+    }
+  ],
+  "cg_msi_iauc": [
+    {
+      "Model block": "CGMacros MSI-PPGR",
+      "Outcome": "2-h iAUC /1000",
+      "Term": "MSI",
+      "Estimate": 1.0698402619532943,
+      "CI low": 0.5404709005228197,
+      "CI high": 1.5992096233837694,
+      "P": 7.460413515665013e-05,
+      "q": 0.0001989443604177,
+      "Meals": 1498,
+      "Participants/clusters": NaN
+    },
+    {
+      "Model block": "CGMacros MSI-PPGR",
+      "Outcome": "2-h iAUC /1000",
+      "Term": "MSI",
+      "Estimate": 1.169631167218142,
+      "CI low": 0.5970646507471291,
+      "CI high": 1.742197683689155,
+      "P": 6.231683080253255e-05,
+      "q": 0.0001794724727112,
+      "Meals": 1480,
+      "Participants/clusters": NaN
+    },
+    {
+      "Model block": "Food-matrix model",
+      "Outcome": "2-h iAUC /1000",
+      "Term": "MSI",
+      "Estimate": 1.28838169134766,
+      "CI low": 0.6535161762132049,
+      "CI high": 1.9232472064821151,
+      "P": 6.96203232814193e-05,
+      "q": 0.0002142163793274,
+      "Meals": 1497,
+      "Participants/clusters": 40.0
+    }
+  ],
+  "food_interaction": [
+    {
+      "Model block": "Food-matrix model",
+      "Outcome": "2-h iAUC /1000",
+      "Term": "MSI x digestibility-risk",
+      "Estimate": 0.4101264030649179,
+      "CI low": 0.2157253373402672,
+      "CI high": 0.6045274687895685,
+      "P": 3.549598572424092e-05,
+      "q": 0.0001183199524141,
+      "Meals": 1497,
+      "Participants/clusters": 40.0
+    },
+    {
+      "Model block": "Food-matrix model",
+      "Outcome": "2-h peak delta",
+      "Term": "MSI x digestibility-risk",
+      "Estimate": 4.988467977640173,
+      "CI low": 2.6638684506687413,
+      "CI high": 7.313067504611605,
+      "P": 2.5986515120590024e-05,
+      "q": 0.0001039460604823,
+      "Meals": 1497,
+      "Participants/clusters": 40.0
+    }
+  ],
+  "food_digest": [
+    {
+      "Model block": "Food-matrix model",
+      "Outcome": "2-h iAUC /1000",
+      "Term": "Digestibility-risk",
+      "Estimate": 0.3880066411928755,
+      "CI low": 0.238567463283902,
+      "CI high": 0.537445819101849,
+      "P": 3.5999420358132896e-07,
+      "q": 2.879953628650632e-06,
+      "Meals": 1497,
+      "Participants/clusters": 40.0
+    },
+    {
+      "Model block": "Food-matrix model",
+      "Outcome": "2-h peak delta",
+      "Term": "Digestibility-risk",
+      "Estimate": 4.112804345165614,
+      "CI low": 2.1681198866164912,
+      "CI high": 6.057488803714737,
+      "P": 3.3952448140732764e-05,
+      "q": 0.0001183199524141,
+      "Meals": 1497,
+      "Participants/clusters": 40.0
+    }
+  ],
+  "prediction": [
+    {
+      "Target": "2h iAUC",
+      "Model": "M0 carb",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 2294.8339520562886,
+      "RMSE": 3089.1625852156176,
+      "R2": 0.0402070302629747,
+      "AUC": 0.6033188965257509,
+      "AUPRC": 0.3100596098224392,
+      "Calibration slope": 0.8873511188337622,
+      "Net benefit pt25": 0.0
+    },
+    {
+      "Target": "2h iAUC",
+      "Model": "M1 macro+time",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 2200.780643735978,
+      "RMSE": 2948.301706860644,
+      "R2": 0.1257414669345518,
+      "AUC": 0.6727991714527822,
+      "AUPRC": 0.4035592328090606,
+      "Calibration slope": 0.928296218529452,
+      "Net benefit pt25": 0.0447263017356475
+    },
+    {
+      "Target": "2h iAUC",
+      "Model": "M2 + pre-CGM",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 2166.3006130879985,
+      "RMSE": 2907.769281513579,
+      "R2": 0.1496143547008814,
+      "AUC": 0.6878307127389135,
+      "AUPRC": 0.4176914400671324,
+      "Calibration slope": 0.9015213414198364,
+      "Net benefit pt25": 0.0520694259012016
+    },
+    {
+      "Target": "2h iAUC",
+      "Model": "M3 + MSI",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 2011.2860119922705,
+      "RMSE": 2722.276095558545,
+      "R2": 0.2546498016676174,
+      "AUC": 0.761966858111289,
+      "AUPRC": 0.5201047664643306,
+      "Calibration slope": 0.9305635788513243,
+      "Net benefit pt25": 0.0796617712505563
+    },
+    {
+      "Target": "2h peak delta",
+      "Model": "M0 carb",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 32.02003447119285,
+      "RMSE": 42.41261713236396,
+      "R2": 0.0456595511833159,
+      "AUC": 0.5889410506439637,
+      "AUPRC": 0.2977215947413433,
+      "Calibration slope": 0.909538327564131,
+      "Net benefit pt25": 0.0011125945705384
+    },
+    {
+      "Target": "2h peak delta",
+      "Model": "M1 macro+time",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 30.096375813654607,
+      "RMSE": 39.76850566820016,
+      "R2": 0.1609424841222936,
+      "AUC": 0.6959350901643805,
+      "AUPRC": 0.4271826964507053,
+      "Calibration slope": 0.9555123570301602,
+      "Net benefit pt25": 0.0516243880729862
+    },
+    {
+      "Target": "2h peak delta",
+      "Model": "M2 + pre-CGM",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 29.82971421880332,
+      "RMSE": 39.0972231967973,
+      "R2": 0.1890295786315102,
+      "AUC": 0.7025107839959112,
+      "AUPRC": 0.4264589068183669,
+      "Calibration slope": 0.9232664285142452,
+      "Net benefit pt25": 0.057632398753894
+    },
+    {
+      "Target": "2h peak delta",
+      "Model": "M3 + MSI",
+      "N": 1498,
+      "Participants": 40,
+      "MAE": 27.13889501332346,
+      "RMSE": 35.84907400377245,
+      "R2": 0.318181043708112,
+      "AUC": 0.7867170511361351,
+      "AUPRC": 0.5710779061792832,
+      "Calibration slope": 0.9625596271452164,
+      "Net benefit pt25": 0.0941255006675567
+    }
+  ],
+  "prediction_delta": [
+    {
+      "target": "iauc_2h",
+      "comparison": "M3_msi_enhanced minus M2_macro_precgm_context",
+      "MAE_delta": -155.01460109572804,
+      "MAE_pct_change": -7.155728995282849,
+      "AUC_delta": 0.0741361453723754,
+      "calibration_slope_delta": 0.029042237431488
+    },
+    {
+      "target": "iauc_2h",
+      "comparison": "M3_msi_enhanced minus M0_carb_only",
+      "MAE_delta": -283.5479400640181,
+      "MAE_pct_change": -12.355924044523771,
+      "AUC_delta": 0.158647961585538,
+      "calibration_slope_delta": 0.0432124600175621
+    },
+    {
+      "target": "peak_delta_2h",
+      "comparison": "M3_msi_enhanced minus M2_macro_precgm_context",
+      "MAE_delta": -2.6908192054798548,
+      "MAE_pct_change": -9.02060001561692,
+      "AUC_delta": 0.0842062671402239,
+      "calibration_slope_delta": 0.0392931986309711
+    },
+    {
+      "target": "peak_delta_2h",
+      "comparison": "M3_msi_enhanced minus M0_carb_only",
+      "MAE_delta": -4.881139457869391,
+      "MAE_pct_change": -15.244016874062888,
+      "AUC_delta": 0.1977760004921713,
+      "calibration_slope_delta": 0.0530212995810852
+    }
+  ],
+  "external": [
+    {
+      "dataset": "CGMacros",
+      "n_subjects": 40,
+      "n_events": 1498,
+      "event_type": "free-living meals",
+      "median_iauc_2h": 2146.3,
+      "median_peak_delta_2h": 42.6,
+      "time_above_140_or_high_rate": NaN
+    },
+    {
+      "dataset": "Stanford_CGMDB",
+      "n_subjects": 38,
+      "n_events": 588,
+      "event_type": "standardized food challenges",
+      "median_iauc_2h": 2441.318379535638,
+      "median_peak_delta_2h": 49.7574361879713,
+      "time_above_140_or_high_rate": 0.25
+    },
+    {
+      "dataset": "T1D_UOM",
+      "n_subjects": 15,
+      "n_events": 3820,
+      "event_type": "T1D logged meals",
+      "median_iauc_2h": 1326.4398233333327,
+      "median_peak_delta_2h": 42.34276999999999,
+      "time_above_140_or_high_rate": 0.25
+    },
+    {
+      "dataset": "Jaeb_CGMND_HealthyAdults",
+      "n_subjects": 169,
+      "n_events": 383117,
+      "event_type": "healthy adult CGM readings",
+      "median_iauc_2h": NaN,
+      "median_peak_delta_2h": NaN,
+      "time_above_140_or_high_rate": 0.0206866197183098
+    }
+  ],
+  "counts": {
+    "main_figures": 9,
+    "extended_figures": 16,
+    "figure_files": 100,
+    "source_data": 69,
+    "main_tables": 5,
+    "supp_tables": 30
+  },
+  "main_figure_files": [
+    {
+      "figure": "MainFigure1_EvidenceArchitecture",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure1_EvidenceArchitecture.png"
+    },
+    {
+      "figure": "MainFigure2_NHANES_ExposureResponse",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure2_NHANES_ExposureResponse.png"
+    },
+    {
+      "figure": "MainFigure3_MSI_Validation",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure3_MSI_Validation.png"
+    },
+    {
+      "figure": "MainFigure4_CGMacros_PPGR_Vulnerability",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure4_CGMacros_PPGR_Vulnerability.png"
+    },
+    {
+      "figure": "MainFigure5_FoodMatrix_Interaction",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure5_FoodMatrix_Interaction.png"
+    },
+    {
+      "figure": "MainFigure6_Dynamic_CGM_Phenotypes",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure6_Dynamic_CGM_Phenotypes.png"
+    },
+    {
+      "figure": "MainFigure7_Prediction_Calibration",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure7_Prediction_Calibration.png"
+    },
+    {
+      "figure": "MainFigure8_External_Transportability",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure8_External_Transportability.png"
+    },
+    {
+      "figure": "MainFigure9_Mechanistic_Plausibility",
+      "path": "C:\\Users\\liu12\\OneDrive\\Desktop\\ShiYiSiNan_CGMacros\\outputs\\integrated_mainline\\high_impact_publication_figures_tables_2026-06-11\\figures\\main\\MainFigure9_Mechanistic_Plausibility.png"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "citation_short": "Zeevi et al., Cell 2015",
+      "domain": "PPGR_precision_nutrition",
+      "key_message": "Identical foods can produce highly individualized postprandial glucose responses.",
+      "url": "https://www.cell.com/fulltext/S0092-8674(15)01481-6"
+    },
+    {
+      "citation_short": "Berry et al., Nature Medicine 2020 / PREDICT 1",
+      "domain": "PPGR_precision_nutrition",
+      "key_message": "Meal composition, individual traits, microbiome and lifestyle jointly shape postprandial responses.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8265154/"
+    },
+    {
+      "citation_short": "Nature Medicine personalized nutrition RCT 2024",
+      "domain": "PPGR_precision_nutrition",
+      "key_message": "Personalized nutrition programs can be tested as actionable interventions rather than descriptive prediction only.",
+      "url": "https://www.nature.com/articles/s41591-024-02951-6"
+    },
+    {
+      "citation_short": "Functional data analysis of postprandial CGM trajectories, 2025",
+      "domain": "CGM_functional_phenotyping",
+      "key_message": "Full CGM curve shape can carry information lost by peak/iAUC summaries.",
+      "url": "https://link.springer.com/article/10.1186/s12874-025-02748-2"
+    },
+    {
+      "citation_short": "Stahlhut et al./PLOS ONE DEHP insulin resistance 2013",
+      "domain": "phthalates_metabolic_health",
+      "key_message": "DEHP metabolite patterns were associated with insulin resistance markers.",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0071392"
+    },
+    {
+      "citation_short": "Trasande et al., urinary phthalates and adolescent insulin resistance",
+      "domain": "phthalates_metabolic_health",
+      "key_message": "Phthalate metabolites have been linked to insulin resistance in younger populations.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4528350/"
+    },
+    {
+      "citation_short": "Phthalates and metabolic syndrome, NHANES",
+      "domain": "phthalates_metabolic_health",
+      "key_message": "Urinary phthalate biomarkers have been associated with metabolic syndrome components.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4832560/"
+    },
+    {
+      "citation_short": "WQS/qgcomp/BKMR phthalate mixture analysis",
+      "domain": "mixtures_methods",
+      "key_message": "Mixture models reduce single-exposure overclaiming in correlated chemical biomarker settings.",
+      "url": "https://link.springer.com/article/10.1186/s40001-026-04036-1"
+    },
+    {
+      "citation_short": "INFOGEST consensus digestion protocol",
+      "domain": "food_structure_digestion",
+      "key_message": "Standardized digestion conditions enable reproducible food matrix comparisons.",
+      "url": "https://infogest.hub.inrae.fr/infogest-scientific-publications"
+    },
+    {
+      "citation_short": "Simple in vitro glucose release protocol",
+      "domain": "food_structure_digestion",
+      "key_message": "Glucose release iAUC/Cmax/early slope are plausible mechanistic endpoints.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12121517/"
+    },
+    {
+      "citation_short": "USDA FoodData Central",
+      "domain": "food_database",
+      "key_message": "Provides standardized macro/micronutrient lookup and API access.",
+      "url": "https://fdc.nal.usda.gov/api-guide"
+    },
+    {
+      "citation_short": "University of Sydney Glycemic Index Database",
+      "domain": "food_database",
+      "key_message": "Food-specific GI supports glycemic load proxies.",
+      "url": "https://glycemicindex.com/"
+    },
+    {
+      "citation_short": "Open Food Facts API",
+      "domain": "food_database",
+      "key_message": "Can provide processing and product-level proxies for packaged foods.",
+      "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/"
+    },
+    {
+      "citation_short": "EPA CompTox Chemicals Dashboard",
+      "domain": "mechanism_database",
+      "key_message": "DEHP and metabolites can be connected to toxicology assay and pathway evidence.",
+      "url": "https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard"
+    },
+    {
+      "citation_short": "PubChem DEHP compound record",
+      "domain": "mechanism_database",
+      "key_message": "Provides stable identifiers for DEHP and metabolite mapping.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8343"
+    },
+    {
+      "citation_short": "TRIPOD+AI BMJ 2024",
+      "domain": "reporting_guideline",
+      "key_message": "Specifies complete reporting of data, predictors, modeling, validation and performance.",
+      "url": "https://www.bmj.com/content/385/bmj-2023-078378"
+    },
+    {
+      "citation_short": "PROBAST+AI BMJ 2025",
+      "domain": "reporting_guideline",
+      "key_message": "Structures bias assessment across participants, predictors, outcomes and analysis.",
+      "url": "https://www.bmj.com/content/388/bmj-2024-082505"
+    },
+    {
+      "citation_short": "STROBE-ME",
+      "domain": "reporting_guideline",
+      "key_message": "Improves reporting of biomarker handling, assay and confounding issues.",
+      "url": "https://www.equator-network.org/reporting-guidelines/strobe-me/"
+    },
+    {
+      "citation_short": "STROBE-nut",
+      "domain": "reporting_guideline",
+      "key_message": "Improves transparency for dietary data and nutritional exposures.",
+      "url": "https://www.equator-network.org/reporting-guidelines/strobe-nut/"
+    },
+    {
+      "citation_short": "Target trial emulation framework",
+      "domain": "causal_methods",
+      "key_message": "Explicit eligibility, strategies, follow-up and contrast reduce causal overclaiming.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10392882/"
+    }
+  ]
+}
