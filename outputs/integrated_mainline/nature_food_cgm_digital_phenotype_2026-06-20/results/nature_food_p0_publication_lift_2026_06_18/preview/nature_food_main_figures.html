@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Food main figures</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --paper: #fffefa;
+  --ink: #1f2724;
+  --muted: #5d6762;
+  --line: #dad7cf;
+  --accent: #1f6f64;
+  --accent-soft: #dfeeea;
+  --warn: #8b4d12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+aside {
+  border-right: 1px solid var(--line);
+  background: #f0eee7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+aside h1 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+aside p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+aside a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+aside a:hover { background: var(--accent-soft); color: var(--accent); }
+main {
+  padding: 34px min(7vw, 80px) 80px;
+}
+article {
+  max-width: 980px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px min(6vw, 64px);
+  box-shadow: 0 12px 40px rgba(31, 39, 36, 0.08);
+}
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 23px;
+  margin: 34px 0 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  color: var(--accent);
+}
+h4 { font-size: 15px; margin: 18px 0 8px; }
+p { margin: 10px 0; }
+ul, ol { margin: 8px 0 16px 22px; padding: 0; }
+li { margin: 4px 0; }
+code {
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  background: #ece8df;
+  border: 1px solid #ded7c9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+pre {
+  overflow: auto;
+  background: #202824;
+  color: #f5f2e9;
+  border-radius: 8px;
+  padding: 16px;
+}
+pre code { background: transparent; border: 0; padding: 0; color: inherit; }
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #233d38;
+}
+.source-path {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -14px 0 24px;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+}
+th { background: #ede9de; text-align: left; }
+tr:nth-child(even) td { background: #fbfaf6; }
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.figure-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.figure-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.figure-card h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--warn);
+  background: #f7eadc;
+  border: 1px solid #ebd1b6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; }
+  main { padding: 20px; }
+  article { padding: 24px 18px; }
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Nature Food 渲染预览</h1>
+      <p>这些页面由 Markdown、CSV 和主图文件生成，用于阅读、审稿前检查和投稿材料整理。</p>
+      <h4>主图</h4>
+<a href="nature_food_main_figures.html">六张主图预览</a>
+<h4>文档</h4>
+<a href="NatureFood_next_tasks_to_publication_zh_2026_06_18.html">NatureFood_next_tasks_to_publication_zh_2026_06_18.md</a>
+<a href="NatureFood_next_stage_completion_report_zh.html">NatureFood_next_stage_completion_report_zh.md</a>
+<a href="NatureFood_presubmission_enquiry_v1.0.html">NatureFood_presubmission_enquiry_v1.0.md</a>
+<a href="NatureFood_150_word_abstract_v1.0.html">NatureFood_150_word_abstract_v1.0.md</a>
+<a href="NatureFood_analysis_manuscript_skeleton_v0.1.html">NatureFood_analysis_manuscript_skeleton_v0.1.md</a>
+<a href="Reviewer_risk_response_memo_v1.0.html">Reviewer_risk_response_memo_v1.0.md</a>
+<a href="Aim1_claim_guardrails.html">Aim1_claim_guardrails.md</a>
+<a href="Aim2_Aim3_phase_bridge_guardrails.html">Aim2_Aim3_phase_bridge_guardrails.md</a>
+<a href="Aim4_bridge_cohort_pilot_synopsis.html">Aim4_bridge_cohort_pilot_synopsis.md</a>
+<a href="nature_food_next_stage_task_design_zh.html">nature_food_next_stage_task_design_zh.md</a>
+<a href="p0_claim_hierarchy_and_abstract_zh.html">p0_claim_hierarchy_and_abstract_zh.md</a>
+<a href="p0_completion_report_zh.html">p0_completion_report_zh.md</a>
+<a href="aim2_matrix_adjudication_protocol.html">aim2_matrix_adjudication_protocol.md</a>
+<a href="aim3_digital_phenotype_framing_zh.html">aim3_digital_phenotype_framing_zh.md</a>
+<a href="NatureFood_figure_legends_v0.1.html">NatureFood_figure_legends_v0.1.md</a>
+<h4>表格</h4>
+<a href="NatureFood_next_tasks_to_publication_matrix_2026_06_18.html">NatureFood_next_tasks_to_publication_matrix_2026_06_18.csv</a>
+<a href="NatureFood_publication_decision_gates_2026_06_18.html">NatureFood_publication_decision_gates_2026_06_18.csv</a>
+<a href="NatureFood_route_decision_memo.html">NatureFood_route_decision_memo.csv</a>
+<a href="Aim1_source_proxy_to_DEHP_and_metabolic_anchor.html">Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</a>
+<a href="Aim1_food_plasticizer_panel_literature_extraction_schema.html">Aim1_food_plasticizer_panel_literature_extraction_schema.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_dataset.html">Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_models.html">Aim2_Aim3_CGMacros_phase_bridge_models.csv</a>
+<a href="nature_food_next_stage_task_matrix.html">nature_food_next_stage_task_matrix.csv</a>
+<a href="nature_food_decision_gates.html">nature_food_decision_gates.csv</a>
+<a href="p0_claim_hierarchy.html">p0_claim_hierarchy.csv</a>
+<a href="p0_aim1_food_system_exposure_matrix.html">p0_aim1_food_system_exposure_matrix.csv</a>
+<a href="p0_food_plasticizer_measurement_panel.html">p0_food_plasticizer_measurement_panel.csv</a>
+<a href="p0_food_plasticizer_sampling_frame_96.html">p0_food_plasticizer_sampling_frame_96.csv</a>
+<a href="p0_six_display_item_plan.html">p0_six_display_item_plan.csv</a>
+<a href="p0_reviewer_risk_memo.html">p0_reviewer_risk_memo.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_feasibility.html">p0_aim2_cgmacros_phase_map_feasibility.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_assignment.html">p0_aim2_cgmacros_phase_map_assignment.csv</a>
+<a href="p0_aim3_digital_phenotype_evidence.html">p0_aim3_digital_phenotype_evidence.csv</a>
+<a href="p0_software_reproducibility_audit.html">p0_software_reproducibility_audit.csv</a>
+    </aside>
+    <main>
+      <article>
+<h1>Nature Food 六张主图预览<span class="badge">6 figures</span></h1>
+<p>以下为当前版本的六张主文图 PNG 渲染；对应 PDF 已同步输出，可用于后续投稿排版和矢量编辑。</p>
+<div class="figure-grid">
+<section class="figure-card">
+<h2>Figure1 integrated architecture</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure1_integrated_architecture.png | <a href="../figures/Figure1_integrated_architecture.pdf">PDF</a></div>
+<img src="../figures/Figure1_integrated_architecture.png" alt="Figure1_integrated_architecture">
+</section><section class="figure-card">
+<h2>Figure2 population exposure anchor</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure2_population_exposure_anchor.png | <a href="../figures/Figure2_population_exposure_anchor.pdf">PDF</a></div>
+<img src="../figures/Figure2_population_exposure_anchor.png" alt="Figure2_population_exposure_anchor">
+</section><section class="figure-card">
+<h2>Figure3 meal expression layer</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure3_meal_expression_layer.png | <a href="../figures/Figure3_meal_expression_layer.pdf">PDF</a></div>
+<img src="../figures/Figure3_meal_expression_layer.png" alt="Figure3_meal_expression_layer">
+</section><section class="figure-card">
+<h2>Figure4 meal redesign phase compatibility</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure4_meal_redesign_phase_compatibility.png | <a href="../figures/Figure4_meal_redesign_phase_compatibility.pdf">PDF</a></div>
+<img src="../figures/Figure4_meal_redesign_phase_compatibility.png" alt="Figure4_meal_redesign_phase_compatibility">
+</section><section class="figure-card">
+<h2>Figure5 cgm digital phenotype validation</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure5_cgm_digital_phenotype_validation.png | <a href="../figures/Figure5_cgm_digital_phenotype_validation.pdf">PDF</a></div>
+<img src="../figures/Figure5_cgm_digital_phenotype_validation.png" alt="Figure5_cgm_digital_phenotype_validation">
+</section><section class="figure-card">
+<h2>Figure6 bridge cohort workflow</h2>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\figures\Figure6_bridge_cohort_workflow.png | <a href="../figures/Figure6_bridge_cohort_workflow.pdf">PDF</a></div>
+<img src="../figures/Figure6_bridge_cohort_workflow.png" alt="Figure6_bridge_cohort_workflow">
+</section>
+</div>
+</article>
+    </main>
+  </div>
+</body>
+</html>

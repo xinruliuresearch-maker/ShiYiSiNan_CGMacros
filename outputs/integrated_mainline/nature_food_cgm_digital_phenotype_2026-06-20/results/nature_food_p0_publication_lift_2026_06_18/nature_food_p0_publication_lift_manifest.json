@@ -1,0 +1,32 @@
+{
+  "created": "2026-06-18",
+  "objective": "Nature Food P0 publication-lift package using existing NHANES, CGMacros and JAEB/npj outputs",
+  "outputs": [
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\docs\\aim2_matrix_adjudication_protocol.md",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\docs\\aim3_digital_phenotype_framing_zh.md",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\docs\\p0_claim_hierarchy_and_abstract_zh.md",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\docs\\p0_completion_report_zh.md",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure1_claim_hierarchy.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure2_food_system_source_proxy_evidence.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure3_aim2_matrix_defense.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure4_cgmacros_phase_map_feasibility.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure5_aim3_digital_phenotype_validation.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\figure_source_data\\figure_source_map_six_display_items.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\nature_food_p0_publication_lift_manifest.json",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim1_food_system_exposure_matrix.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_cgmacros_phase_map_assignment.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_cgmacros_phase_map_feasibility.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_cgmacros_phase_map_input_summary.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_matrix_defense_summary.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_six_class_matrix_summary.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim2_subject_leverage_summary.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_aim3_digital_phenotype_evidence.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_claim_hierarchy.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_food_plasticizer_measurement_panel.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_food_plasticizer_panel_status.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_food_plasticizer_sampling_frame_96.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_reviewer_risk_memo.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_six_display_item_plan.csv",
+    "D:\\ai for science\\results\\nature_food_p0_publication_lift_2026_06_18\\tables\\p0_software_reproducibility_audit.csv"
+  ]
+}

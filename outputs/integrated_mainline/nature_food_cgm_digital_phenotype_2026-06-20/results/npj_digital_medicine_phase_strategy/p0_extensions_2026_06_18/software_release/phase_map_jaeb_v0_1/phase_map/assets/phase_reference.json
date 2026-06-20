@@ -1,0 +1,131 @@
+{
+  "version": "phase-map-jaeb-summary-v0.1",
+  "feature_reference": {
+    "cgm_mean_glucose_mg_dl": {
+      "mean": 181.9947860962567,
+      "sd": 37.024620903246415
+    },
+    "cgm_time_in_range_70_180_pct": {
+      "mean": 51.06868983957219,
+      "sd": 17.473351770060347
+    },
+    "cgm_time_below_70_pct": {
+      "mean": 4.902526737967914,
+      "sd": 4.57451859926927
+    },
+    "cgm_time_below_54_pct": {
+      "mean": 1.8535708556149733,
+      "sd": 2.51621639534203
+    },
+    "cgm_time_above_180_pct": {
+      "mean": 44.04009358288771,
+      "sd": 18.66655300783867
+    },
+    "cgm_time_above_250_pct": {
+      "mean": 20.020106951871657,
+      "sd": 15.59256791079431
+    },
+    "cgm_cv_pct": {
+      "mean": 40.2356550802139,
+      "sd": 7.2785554903026854
+    },
+    "cgm_sd_proxy": {
+      "mean": 73.0141667513369,
+      "sd": 18.356374263844128
+    }
+  },
+  "order_parameters": [
+    "glycemic_burden_score",
+    "hypoglycemic_susceptibility_score",
+    "dynamic_instability_score",
+    "circadian_disruption_score",
+    "resilience_proxy_score"
+  ],
+  "centroids": [
+    {
+      "phase_label": "低血糖易感相",
+      "glycemic_burden_score": -0.515862436923021,
+      "hypoglycemic_susceptibility_score": 2.55281412161423,
+      "dynamic_instability_score": 1.0281877334921685,
+      "circadian_disruption_score": 0.5257733457002067,
+      "resilience_proxy_score": 0.1446327429553117
+    },
+    {
+      "phase_label": "昼夜节律紊乱相",
+      "glycemic_burden_score": 0.5220190742365095,
+      "hypoglycemic_susceptibility_score": 0.14592557218985436,
+      "dynamic_instability_score": 0.42470088569448383,
+      "circadian_disruption_score": 1.2962677180309568,
+      "resilience_proxy_score": 0.5606338951784761
+    },
+    {
+      "phase_label": "稳定达标相",
+      "glycemic_burden_score": -0.8803622725243937,
+      "hypoglycemic_susceptibility_score": -0.3511254516027744,
+      "dynamic_instability_score": -0.5409021909501571,
+      "circadian_disruption_score": -0.21594283221356492,
+      "resilience_proxy_score": -0.8194516502914383
+    },
+    {
+      "phase_label": "高波动震荡相",
+      "glycemic_burden_score": -0.16958707375810517,
+      "hypoglycemic_susceptibility_score": 0.0712530084575774,
+      "dynamic_instability_score": 0.606902076068645,
+      "circadian_disruption_score": -0.24152263202698965,
+      "resilience_proxy_score": 0.010400439821397132
+    },
+    {
+      "phase_label": "高血糖持续相",
+      "glycemic_burden_score": 1.2114490331368197,
+      "hypoglycemic_susceptibility_score": -0.5082577376329036,
+      "dynamic_instability_score": -0.470155909458287,
+      "circadian_disruption_score": -0.34392869430914763,
+      "resilience_proxy_score": 0.7147935502243672
+    }
+  ],
+  "phase_dictionary": [
+    {
+      "phase_label_zh": "稳定达标相",
+      "phase_id": "stable_in_range",
+      "phase_order": 1,
+      "phase_label_en": "Stable in-range phase",
+      "interpretation": "Higher TIR and lower variability; serves as the reference phase."
+    },
+    {
+      "phase_label_zh": "高波动震荡相",
+      "phase_id": "high_variability_oscillation",
+      "phase_order": 2,
+      "phase_label_en": "High-variability oscillatory phase",
+      "interpretation": "High glycaemic variability despite heterogeneous mean glucose burden."
+    },
+    {
+      "phase_label_zh": "高血糖持续相",
+      "phase_id": "persistent_hyperglycaemia",
+      "phase_order": 3,
+      "phase_label_en": "Persistent hyperglycaemia phase",
+      "interpretation": "High mean glucose and high time above range."
+    },
+    {
+      "phase_label_zh": "昼夜节律紊乱相",
+      "phase_id": "circadian_disruption",
+      "phase_order": 4,
+      "phase_label_en": "Circadian-disruption phase",
+      "interpretation": "Large day-night CGM differences."
+    },
+    {
+      "phase_label_zh": "低血糖易感相",
+      "phase_id": "hypoglycaemia_susceptible",
+      "phase_order": 5,
+      "phase_label_en": "Hypoglycaemia-susceptible phase",
+      "interpretation": "Higher time below range and hypoglycaemia burden."
+    },
+    {
+      "phase_label_zh": "混合过渡相",
+      "phase_id": "mixed_transition",
+      "phase_order": 6,
+      "phase_label_en": "Mixed transition phase",
+      "interpretation": "Intermediate phase without a dominant CGM signature."
+    }
+  ],
+  "missingness_rule": "circadian_disruption_score is set to 0.0 when day/night summaries are unavailable."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "success",
+  "steps_completed": 8,
+  "total_elapsed_seconds": 198.29,
+  "status_csv": "results/full_pipeline_run_status.csv"
+}

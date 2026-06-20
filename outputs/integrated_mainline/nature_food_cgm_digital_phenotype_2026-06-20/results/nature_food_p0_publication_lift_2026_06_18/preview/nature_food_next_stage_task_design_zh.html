@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Food 下一阶段任务设计：从 P0 证据包到可预投稿/可投稿稿件</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --paper: #fffefa;
+  --ink: #1f2724;
+  --muted: #5d6762;
+  --line: #dad7cf;
+  --accent: #1f6f64;
+  --accent-soft: #dfeeea;
+  --warn: #8b4d12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+aside {
+  border-right: 1px solid var(--line);
+  background: #f0eee7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+aside h1 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+aside p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+aside a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+aside a:hover { background: var(--accent-soft); color: var(--accent); }
+main {
+  padding: 34px min(7vw, 80px) 80px;
+}
+article {
+  max-width: 980px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px min(6vw, 64px);
+  box-shadow: 0 12px 40px rgba(31, 39, 36, 0.08);
+}
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 23px;
+  margin: 34px 0 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  color: var(--accent);
+}
+h4 { font-size: 15px; margin: 18px 0 8px; }
+p { margin: 10px 0; }
+ul, ol { margin: 8px 0 16px 22px; padding: 0; }
+li { margin: 4px 0; }
+code {
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  background: #ece8df;
+  border: 1px solid #ded7c9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+pre {
+  overflow: auto;
+  background: #202824;
+  color: #f5f2e9;
+  border-radius: 8px;
+  padding: 16px;
+}
+pre code { background: transparent; border: 0; padding: 0; color: inherit; }
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #233d38;
+}
+.source-path {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -14px 0 24px;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+}
+th { background: #ede9de; text-align: left; }
+tr:nth-child(even) td { background: #fbfaf6; }
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.figure-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.figure-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.figure-card h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--warn);
+  background: #f7eadc;
+  border: 1px solid #ebd1b6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; }
+  main { padding: 20px; }
+  article { padding: 24px 18px; }
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Nature Food 渲染预览</h1>
+      <p>这些页面由 Markdown、CSV 和主图文件生成，用于阅读、审稿前检查和投稿材料整理。</p>
+      <h4>主图</h4>
+<a href="nature_food_main_figures.html">六张主图预览</a>
+<h4>文档</h4>
+<a href="NatureFood_next_tasks_to_publication_zh_2026_06_18.html">NatureFood_next_tasks_to_publication_zh_2026_06_18.md</a>
+<a href="NatureFood_next_stage_completion_report_zh.html">NatureFood_next_stage_completion_report_zh.md</a>
+<a href="NatureFood_presubmission_enquiry_v1.0.html">NatureFood_presubmission_enquiry_v1.0.md</a>
+<a href="NatureFood_150_word_abstract_v1.0.html">NatureFood_150_word_abstract_v1.0.md</a>
+<a href="NatureFood_analysis_manuscript_skeleton_v0.1.html">NatureFood_analysis_manuscript_skeleton_v0.1.md</a>
+<a href="Reviewer_risk_response_memo_v1.0.html">Reviewer_risk_response_memo_v1.0.md</a>
+<a href="Aim1_claim_guardrails.html">Aim1_claim_guardrails.md</a>
+<a href="Aim2_Aim3_phase_bridge_guardrails.html">Aim2_Aim3_phase_bridge_guardrails.md</a>
+<a href="Aim4_bridge_cohort_pilot_synopsis.html">Aim4_bridge_cohort_pilot_synopsis.md</a>
+<a href="nature_food_next_stage_task_design_zh.html">nature_food_next_stage_task_design_zh.md</a>
+<a href="p0_claim_hierarchy_and_abstract_zh.html">p0_claim_hierarchy_and_abstract_zh.md</a>
+<a href="p0_completion_report_zh.html">p0_completion_report_zh.md</a>
+<a href="aim2_matrix_adjudication_protocol.html">aim2_matrix_adjudication_protocol.md</a>
+<a href="aim3_digital_phenotype_framing_zh.html">aim3_digital_phenotype_framing_zh.md</a>
+<a href="NatureFood_figure_legends_v0.1.html">NatureFood_figure_legends_v0.1.md</a>
+<h4>表格</h4>
+<a href="NatureFood_next_tasks_to_publication_matrix_2026_06_18.html">NatureFood_next_tasks_to_publication_matrix_2026_06_18.csv</a>
+<a href="NatureFood_publication_decision_gates_2026_06_18.html">NatureFood_publication_decision_gates_2026_06_18.csv</a>
+<a href="NatureFood_route_decision_memo.html">NatureFood_route_decision_memo.csv</a>
+<a href="Aim1_source_proxy_to_DEHP_and_metabolic_anchor.html">Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</a>
+<a href="Aim1_food_plasticizer_panel_literature_extraction_schema.html">Aim1_food_plasticizer_panel_literature_extraction_schema.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_dataset.html">Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_models.html">Aim2_Aim3_CGMacros_phase_bridge_models.csv</a>
+<a href="nature_food_next_stage_task_matrix.html">nature_food_next_stage_task_matrix.csv</a>
+<a href="nature_food_decision_gates.html">nature_food_decision_gates.csv</a>
+<a href="p0_claim_hierarchy.html">p0_claim_hierarchy.csv</a>
+<a href="p0_aim1_food_system_exposure_matrix.html">p0_aim1_food_system_exposure_matrix.csv</a>
+<a href="p0_food_plasticizer_measurement_panel.html">p0_food_plasticizer_measurement_panel.csv</a>
+<a href="p0_food_plasticizer_sampling_frame_96.html">p0_food_plasticizer_sampling_frame_96.csv</a>
+<a href="p0_six_display_item_plan.html">p0_six_display_item_plan.csv</a>
+<a href="p0_reviewer_risk_memo.html">p0_reviewer_risk_memo.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_feasibility.html">p0_aim2_cgmacros_phase_map_feasibility.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_assignment.html">p0_aim2_cgmacros_phase_map_assignment.csv</a>
+<a href="p0_aim3_digital_phenotype_evidence.html">p0_aim3_digital_phenotype_evidence.csv</a>
+<a href="p0_software_reproducibility_audit.html">p0_software_reproducibility_audit.csv</a>
+    </aside>
+    <main>
+      <article>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\docs\nature_food_next_stage_task_design_zh.md</div>
+<h1>Nature Food 下一阶段任务设计：从 P0 证据包到可预投稿/可投稿稿件</h1>
+<p>生成日期：2026-06-18</p>
+<h2>当前判断</h2>
+<p>P0 已经把现有数据整理成 Nature Food 叙事结构：food-system exposure context、DEHP oxidative profile、CGMacros food matrix/PPGR、CGM phase-map digital phenotype 和 bridge cohort 缺口。下一阶段不应继续横向堆结果，而应围绕两个目标推进：</p>
+<ol>
+<li><strong>短线目标：形成可预投稿的 Analysis 版本。</strong></li>
+</ol>
+<p>这个版本必须把当前证据定位为 triangulated evidence，不能声称同人群因果链。</p>
+<ol>
+<li><strong>长线目标：启动 Aim 4，让文章具备 Article 级别的新增证据。</strong></li>
+</ol>
+<p>Article 版本需要同一批人中的尿/食品 plasticizer panel、标准餐 PPGR 和 14-28 天 CGM phase-map。</p>
+<h2>Nature Food 版主张边界</h2>
+<h3>可以主张</h3>
+<ul>
+<li>食品系统来源 proxy 与 DEHP oxidative profile/代谢易感性存在人群锚点。</li>
+<li>MSI-core 和 food matrix 在真实餐食中共同组织 PPGR vulnerability。</li>
+<li>CGM phase-map 是可复现、可迁移的长期数字表型语言。</li>
+<li>现有证据支持一条多数据集、多时间尺度的 triangulated evidence chain。</li>
+</ul>
+<h3>不能主张</h3>
+<ul>
+<li>不能说塑化剂暴露在同一个人身上直接导致 PPGR 或 CGM phase membership。</li>
+<li>不能把 food plasticizer sampling frame 写成实测食品浓度结果。</li>
+<li>不能把 CGMacros phase assignment 写成已验证的临床 phase 分类。</li>
+<li>不能把 counterfactual meal redesign 写成干预疗效。</li>
+</ul>
+<h2>接下来 6 周的核心任务</h2>
+<h3>Week 1：锁定投稿形态和主图骨架</h3>
+<p>任务：</p>
+<ul>
+<li>决定短线稿件按 Nature Food <strong>Analysis</strong> 预投稿，还是等 Aim 4 pilot 后按 <strong>Article</strong> 预投稿。</li>
+<li>完成 150-word abstract、presubmission title、six-display-item figure spine。</li>
+<li>把所有 claim 标注为 direct、triangulated、model-based 或 bridge-needed。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>NatureFood_presubmission_enquiry_v0.1.md</code></li>
+<li><code>NatureFood_150_word_abstract_v0.1.md</code></li>
+<li><code>NatureFood_figure_spine_v0.1.csv</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>编辑能在第一页看到 food systems + human nutrition + information technology 的适配点。</li>
+</ul>
+<h3>Week 2：重画 6 张主图</h3>
+<p>任务：</p>
+<ul>
+<li>从 P0 source map 生成 Figure 1-6 初版。</li>
+<li>每张图必须有一句 message、一句 limitation 和可追溯 source CSV。</li>
+<li>Figure 1 必须明确 direct evidence 与 bridge-needed edges，避免拼盘感。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>figures/Figure1_integrated_architecture.*</code></li>
+<li><code>figures/Figure2_population_exposure_anchor.*</code></li>
+<li><code>figures/Figure3_meal_expression_layer.*</code></li>
+<li><code>figures/Figure4_meal_redesign_phase_compatibility.*</code></li>
+<li><code>figures/Figure5_cgm_digital_phenotype_validation.*</code></li>
+<li><code>figures/Figure6_bridge_cohort_workflow.*</code></li>
+<li><code>figure_legends/NatureFood_figure_legends_v0.1.md</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>不看正文，只看 6 张图也能读出完整故事。</li>
+</ul>
+<h3>Week 3：Aim 1 food-system exposure anchor 加固</h3>
+<p>任务：</p>
+<ul>
+<li>从 NHANES source-oriented results 中筛出可进主文/Extended Data 的结果。</li>
+<li>把 source proxy、DEHP oxidative profile、MSI/HOMA-IR/HbA1c 三层结果连成 Figure 2。</li>
+<li>明确 food plasticizer measurement panel 的状态：当前是 planned panel/sampling frame，不是实测结果。</li>
+<li>如果要增强 Nature Food fit，启动文献级 food plasticizer measurement panel，记录真实来源、样本、浓度单位和食品/包装类别。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</code></li>
+<li><code>Aim1_food_plasticizer_panel_literature_extraction_schema.csv</code></li>
+<li><code>Aim1_claim_guardrails.md</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>Aim 1 能回答“食品系统情境为何相关”，而不是只回答“尿 DEHP 是否相关”。</li>
+</ul>
+<h3>Week 4：Aim 2 与 Aim 3 的桥接分析</h3>
+<p>任务：</p>
+<ul>
+<li>将 CGMacros phase-map assignment 与 MSI-core、PPGR、food matrix 合并。</li>
+<li>因 CGMacros 37/40 为 stable-in-range，主分析不应强做多分类 phase 比较；优先用 phase order parameters/assignment distance 做连续桥接。</li>
+<li>检验 MSI-core、PPGR/iAUC、food matrix 与 glycaemic burden、instability、resilience proxy 的关系。</li>
+<li>输出 “CGMacros phase compatibility audit”，定位为 transport feasibility。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>Aim2_Aim3_CGMacros_phase_bridge_models.csv</code></li>
+<li><code>Aim2_Aim3_phase_bridge_guardrails.md</code></li>
+<li><code>Figure4_phase_compatibility_source_data.csv</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>能把 Aim 2 的 meal-response 语言与 Aim 3 的 phase-map 语言接起来，但不声称临床 phase validation。</li>
+</ul>
+<h3>Week 5：软件复现包从 phase-map 扩展到 integrated phenotype</h3>
+<p>任务：</p>
+<ul>
+<li>在现有 phase-map package 基础上补 MSI calculator、meal matrix schema、meal-risk output schema。</li>
+<li>增加 toy participant，输出一份 integrated phenotype report。</li>
+<li>保留单元测试和 environment lock。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>integrated_food_cgm_phenotype_v0.1/</code></li>
+<li><code>schemas/integrated_input_schema.csv</code></li>
+<li><code>toy_data/toy_integrated_input.csv</code></li>
+<li><code>tests/test_integrated_package.py</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>一个干净用户能从 toy data 生成 MSI、meal-risk 和 CGM phase-map 输出。</li>
+</ul>
+<h3>Week 6：预投稿材料和审稿风险预案</h3>
+<p>任务：</p>
+<ul>
+<li>写 Nature Food presubmission enquiry。</li>
+<li>写 reviewer risk memo 的逐条回应。</li>
+<li>准备 Analysis 版 manuscript skeleton。</li>
+<li>同时完成 Article 版 Aim 4 pilot protocol 摘要，告诉编辑这条研究线如何升级。</li>
+</ul>
+<p>交付物：</p>
+<ul>
+<li><code>NatureFood_presubmission_enquiry_v1.0.md</code></li>
+<li><code>NatureFood_analysis_manuscript_skeleton_v0.1.md</code></li>
+<li><code>Reviewer_risk_response_memo_v1.0.md</code></li>
+<li><code>Aim4_bridge_cohort_pilot_synopsis.md</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>即使编辑认为现在不够 Article，也能清楚看到 Analysis 版本的贡献和 Article 版本的升级路径。</li>
+</ul>
+<h2>关键新增数据任务：Aim 4</h2>
+<p>Aim 4 是 Article 版本的核心，不应等到所有 dry work 完成才启动。</p>
+<h3>Aim 4A：IRB-ready protocol</h3>
+<p>设计 80-120 人 bridge cohort，覆盖 normal glycaemia、prediabetes、treated/non-insulin T2D。</p>
+<p>测量：</p>
+<ul>
+<li>重复晨尿 plasticizer panel。</li>
+<li>食品/包装 plasticizer panel。</li>
+<li>标准餐 2x2 matrix challenge。</li>
+<li>14-28 天 CGM。</li>
+<li>HbA1c、fasting glucose、insulin、HOMA。</li>
+</ul>
+<h3>Aim 4B：2x2 标准餐挑战</h3>
+<p>设计：</p>
+<ul>
+<li>high matrix protection / low food-contact burden。</li>
+<li>high matrix protection / higher food-contact burden。</li>
+<li>low matrix protection / low food-contact burden。</li>
+<li>low matrix protection / higher food-contact burden。</li>
+</ul>
+<p>要求：</p>
+<ul>
+<li>等碳水、等能量。</li>
+<li>记录物理基质、加工、包装/加热接触。</li>
+<li>体外消化/葡萄糖释放作为机制补充。</li>
+</ul>
+<h3>Aim 4C：可行性 pilot</h3>
+<p>建议先做 20-30 人 pilot，目标不是完全证明效应，而是确认：</p>
+<ul>
+<li>样本采集可行。</li>
+<li>标准餐依从性可行。</li>
+<li>CGM 数据质量可行。</li>
+<li>plasticizer panel 有可测差异。</li>
+<li>PPGR 和 phase/order parameters 可连接。</li>
+</ul>
+<h2>决策门槛</h2>
+<h3>走 Analysis 预投稿</h3>
+<p>满足以下条件即可：</p>
+<ul>
+<li>6 张主图初版完成。</li>
+<li>P0 guardrails 写入摘要、主文和 Figure 1。</li>
+<li>CGMacros phase compatibility 审慎呈现。</li>
+<li>presubmission enquiry 准备完成。</li>
+</ul>
+<h3>走 Article 预投稿</h3>
+<p>至少需要：</p>
+<ul>
+<li>Aim 4 pilot 启动或已完成核心可行性数据。</li>
+<li>食品/包装 plasticizer panel 有实测结果。</li>
+<li>标准餐 PPGR 有初步 human validation。</li>
+<li>integrated phenotype software package 可运行。</li>
+</ul>
+<h2>立即优先级</h2>
+<ol>
+<li><strong>先做 Figure 1-6 初版。</strong></li>
+</ol>
+<p>主图会立刻暴露故事是否仍然像拼盘。</p>
+<ol>
+<li><strong>马上做 Aim2-Aim3 bridge analysis。</strong></li>
+</ol>
+<p>CGMacros 已能分配 frozen phase-map，下一步要把 phase order parameters 与 MSI/PPGR/food matrix 接起来。</p>
+<ol>
+<li><strong>并行写 presubmission enquiry。</strong></li>
+</ol>
+<p>不等所有图完美，先形成编辑可读的一页 pitch。</p>
+<ol>
+<li><strong>启动 Aim 4 pilot 的 IRB/SOP。</strong></li>
+</ol>
+<p>这是 Nature Food Article 级别的真正增量。</p>
+<h2>Go/No-Go</h2>
+<ul>
+<li>如果 2 周内主图不能形成清晰单线故事，应先降级到营养/数字健康方向期刊，而不是硬投 Nature Food。</li>
+<li>如果 6 周内 Aim 4 pilot 无法启动，Nature Food 只能按 Analysis 版本尝试。</li>
+<li>如果食品/包装实测 panel 能启动，并且 20-30 人 pilot 可行，继续按 Article 路线推进。</li>
+</ul>
+</article>
+    </main>
+  </div>
+</body>
+</html>

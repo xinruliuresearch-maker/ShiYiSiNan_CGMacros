@@ -1,0 +1,28 @@
+{
+  "figure_panels": {
+    "Figure 1a cohort overview": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure1a_cohort_overview.csv",
+    "Figure 1b analysis roadmap": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure1b_analysis_roadmap.csv",
+    "Figure 1c readiness dashboard": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure1c_readiness_dashboard.csv",
+    "Figure 2a NHANES main effects": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure2a_nhanes_main_effects.csv",
+    "Figure 2b composition adjusted": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure2b_nhanes_composition_adjusted.csv",
+    "Figure 2c cycle consistency": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure2c_nhanes_cycle_consistency.csv",
+    "Figure 3a MSI PPGR effects": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure3a_cgmacros_msi_ppgr_effects.csv",
+    "Figure 3b six-class food matrix summary": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure3b_food_matrix_6class_summary.csv",
+    "Figure 3c collapsed matrix GEE": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure3c_collapsed_matrix_gee.csv",
+    "Figure 3d subject leverage": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure3d_subject_leverage_stability.csv",
+    "Figure 4a LOSO model ladder": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure4a_loso_model_ladder.csv",
+    "Figure 4b counterfactual deltas": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure4b_counterfactual_high_iauc_deltas.csv",
+    "Figure 4c redesign summary": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure4c_redesign_summary_by_original_matrix.csv",
+    "Figure 4d collapsed matrix observed risk": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\figure4d_collapsed_matrix_observed_risk.csv",
+    "Supplementary evidence bridge": "D:\\ai for science\\results\\nature_food_manuscript_package\\figure_source_data\\supplementary_cross_dataset_evidence_bridge.csv"
+  },
+  "main_outputs": [
+    "figure_source_data_manifest.json",
+    "locked_aim2_collapsed3_food_matrix_gee_results.csv",
+    "locked_aim2_loso_subject_leverage_stability.csv",
+    "locked_aim3_counterfactual_high_iauc_prediction_deltas.csv",
+    "locked_aim3_loso_model_ladder_metrics.csv",
+    "nature_food_requested_deliverables_status.csv",
+    "nature_food_results_skeleton_real_values.md"
+  ]
+}

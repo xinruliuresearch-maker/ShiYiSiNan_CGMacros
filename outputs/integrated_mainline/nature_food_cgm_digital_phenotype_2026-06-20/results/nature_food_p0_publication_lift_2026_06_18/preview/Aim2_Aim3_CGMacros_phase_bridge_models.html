@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aim2_Aim3_CGMacros_phase_bridge_models</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --paper: #fffefa;
+  --ink: #1f2724;
+  --muted: #5d6762;
+  --line: #dad7cf;
+  --accent: #1f6f64;
+  --accent-soft: #dfeeea;
+  --warn: #8b4d12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+aside {
+  border-right: 1px solid var(--line);
+  background: #f0eee7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+aside h1 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+aside p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+aside a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+aside a:hover { background: var(--accent-soft); color: var(--accent); }
+main {
+  padding: 34px min(7vw, 80px) 80px;
+}
+article {
+  max-width: 980px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px min(6vw, 64px);
+  box-shadow: 0 12px 40px rgba(31, 39, 36, 0.08);
+}
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 23px;
+  margin: 34px 0 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  color: var(--accent);
+}
+h4 { font-size: 15px; margin: 18px 0 8px; }
+p { margin: 10px 0; }
+ul, ol { margin: 8px 0 16px 22px; padding: 0; }
+li { margin: 4px 0; }
+code {
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  background: #ece8df;
+  border: 1px solid #ded7c9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+pre {
+  overflow: auto;
+  background: #202824;
+  color: #f5f2e9;
+  border-radius: 8px;
+  padding: 16px;
+}
+pre code { background: transparent; border: 0; padding: 0; color: inherit; }
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #233d38;
+}
+.source-path {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -14px 0 24px;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+}
+th { background: #ede9de; text-align: left; }
+tr:nth-child(even) td { background: #fbfaf6; }
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.figure-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.figure-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.figure-card h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--warn);
+  background: #f7eadc;
+  border: 1px solid #ebd1b6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; }
+  main { padding: 20px; }
+  article { padding: 24px 18px; }
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Nature Food 渲染预览</h1>
+      <p>这些页面由 Markdown、CSV 和主图文件生成，用于阅读、审稿前检查和投稿材料整理。</p>
+      <h4>主图</h4>
+<a href="nature_food_main_figures.html">六张主图预览</a>
+<h4>文档</h4>
+<a href="NatureFood_next_tasks_to_publication_zh_2026_06_18.html">NatureFood_next_tasks_to_publication_zh_2026_06_18.md</a>
+<a href="NatureFood_next_stage_completion_report_zh.html">NatureFood_next_stage_completion_report_zh.md</a>
+<a href="NatureFood_presubmission_enquiry_v1.0.html">NatureFood_presubmission_enquiry_v1.0.md</a>
+<a href="NatureFood_150_word_abstract_v1.0.html">NatureFood_150_word_abstract_v1.0.md</a>
+<a href="NatureFood_analysis_manuscript_skeleton_v0.1.html">NatureFood_analysis_manuscript_skeleton_v0.1.md</a>
+<a href="Reviewer_risk_response_memo_v1.0.html">Reviewer_risk_response_memo_v1.0.md</a>
+<a href="Aim1_claim_guardrails.html">Aim1_claim_guardrails.md</a>
+<a href="Aim2_Aim3_phase_bridge_guardrails.html">Aim2_Aim3_phase_bridge_guardrails.md</a>
+<a href="Aim4_bridge_cohort_pilot_synopsis.html">Aim4_bridge_cohort_pilot_synopsis.md</a>
+<a href="nature_food_next_stage_task_design_zh.html">nature_food_next_stage_task_design_zh.md</a>
+<a href="p0_claim_hierarchy_and_abstract_zh.html">p0_claim_hierarchy_and_abstract_zh.md</a>
+<a href="p0_completion_report_zh.html">p0_completion_report_zh.md</a>
+<a href="aim2_matrix_adjudication_protocol.html">aim2_matrix_adjudication_protocol.md</a>
+<a href="aim3_digital_phenotype_framing_zh.html">aim3_digital_phenotype_framing_zh.md</a>
+<a href="NatureFood_figure_legends_v0.1.html">NatureFood_figure_legends_v0.1.md</a>
+<h4>表格</h4>
+<a href="NatureFood_next_tasks_to_publication_matrix_2026_06_18.html">NatureFood_next_tasks_to_publication_matrix_2026_06_18.csv</a>
+<a href="NatureFood_publication_decision_gates_2026_06_18.html">NatureFood_publication_decision_gates_2026_06_18.csv</a>
+<a href="NatureFood_route_decision_memo.html">NatureFood_route_decision_memo.csv</a>
+<a href="Aim1_source_proxy_to_DEHP_and_metabolic_anchor.html">Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</a>
+<a href="Aim1_food_plasticizer_panel_literature_extraction_schema.html">Aim1_food_plasticizer_panel_literature_extraction_schema.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_dataset.html">Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_models.html">Aim2_Aim3_CGMacros_phase_bridge_models.csv</a>
+<a href="nature_food_next_stage_task_matrix.html">nature_food_next_stage_task_matrix.csv</a>
+<a href="nature_food_decision_gates.html">nature_food_decision_gates.csv</a>
+<a href="p0_claim_hierarchy.html">p0_claim_hierarchy.csv</a>
+<a href="p0_aim1_food_system_exposure_matrix.html">p0_aim1_food_system_exposure_matrix.csv</a>
+<a href="p0_food_plasticizer_measurement_panel.html">p0_food_plasticizer_measurement_panel.csv</a>
+<a href="p0_food_plasticizer_sampling_frame_96.html">p0_food_plasticizer_sampling_frame_96.csv</a>
+<a href="p0_six_display_item_plan.html">p0_six_display_item_plan.csv</a>
+<a href="p0_reviewer_risk_memo.html">p0_reviewer_risk_memo.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_feasibility.html">p0_aim2_cgmacros_phase_map_feasibility.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_assignment.html">p0_aim2_cgmacros_phase_map_assignment.csv</a>
+<a href="p0_aim3_digital_phenotype_evidence.html">p0_aim3_digital_phenotype_evidence.csv</a>
+<a href="p0_software_reproducibility_audit.html">p0_software_reproducibility_audit.csv</a>
+    </aside>
+    <main>
+      <article>
+<h1>Aim2_Aim3_CGMacros_phase_bridge_models<span class="badge">40 rows</span></h1>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\tables\Aim2_Aim3_CGMacros_phase_bridge_models.csv</div>
+<div class="table-wrap"><table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>outcome</th>
+      <th>term</th>
+      <th>n</th>
+      <th>beta_or_estimate</th>
+      <th>ci</th>
+      <th>p_value</th>
+      <th>q_value</th>
+      <th>spearman_rho</th>
+      <th>spearman_p</th>
+      <th>direction</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>glycemic_burden_score</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>0.747340</td>
+      <td>0.4624 to 1.032</td>
+      <td>8.546439e-06</td>
+      <td>2.848813e-05</td>
+      <td>0.727955</td>
+      <td>1.021425e-07</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>glycemic_burden_score</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>0.000311</td>
+      <td>0.0001693 to 0.0004528</td>
+      <td>1.146556e-04</td>
+      <td>2.547902e-04</td>
+      <td>0.681614</td>
+      <td>1.284795e-06</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>glycemic_burden_score</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>2.695668</td>
+      <td>1.658 to 3.733</td>
+      <td>9.962885e-06</td>
+      <td>3.065503e-05</td>
+      <td>0.759099</td>
+      <td>1.369823e-08</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>glycemic_burden_score</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-0.560666</td>
+      <td>-4.36 to 3.239</td>
+      <td>7.739998e-01</td>
+      <td>8.826051e-01</td>
+      <td>-0.027967</td>
+      <td>8.639863e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>glycemic_burden_score</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>-4.989248</td>
+      <td>-9.383 to -0.5954</td>
+      <td>3.205090e-02</td>
+      <td>4.930908e-02</td>
+      <td>-0.299999</td>
+      <td>6.000243e-02</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>hypoglycemic_susceptibility_score</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>-0.313792</td>
+      <td>-0.6471 to 0.01954</td>
+      <td>7.283014e-02</td>
+      <td>1.004554e-01</td>
+      <td>-0.534994</td>
+      <td>3.755540e-04</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>hypoglycemic_susceptibility_score</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>-0.000085</td>
+      <td>-0.000245 to 7.473e-05</td>
+      <td>3.032363e-01</td>
+      <td>3.790454e-01</td>
+      <td>-0.230776</td>
+      <td>1.519447e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>hypoglycemic_susceptibility_score</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>-0.728731</td>
+      <td>-1.969 to 0.512</td>
+      <td>2.568491e-01</td>
+      <td>3.314182e-01</td>
+      <td>-0.330392</td>
+      <td>3.732437e-02</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>hypoglycemic_susceptibility_score</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-1.393626</td>
+      <td>-4.933 to 2.146</td>
+      <td>4.450979e-01</td>
+      <td>5.395126e-01</td>
+      <td>0.076063</td>
+      <td>6.408685e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>hypoglycemic_susceptibility_score</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>4.728115</td>
+      <td>0.6131 to 8.843</td>
+      <td>3.018057e-02</td>
+      <td>4.828891e-02</td>
+      <td>0.033774</td>
+      <td>8.360928e-01</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>dynamic_instability_score</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>0.538698</td>
+      <td>0.2615 to 0.8159</td>
+      <td>4.947670e-04</td>
+      <td>9.895340e-04</td>
+      <td>0.517824</td>
+      <td>6.211876e-04</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>dynamic_instability_score</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>0.000331</td>
+      <td>0.0002209 to 0.0004401</td>
+      <td>7.497557e-07</td>
+      <td>4.998371e-06</td>
+      <td>0.703189</td>
+      <td>4.194928e-07</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>dynamic_instability_score</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>2.722202</td>
+      <td>1.917 to 3.527</td>
+      <td>7.834554e-08</td>
+      <td>7.834554e-07</td>
+      <td>0.712758</td>
+      <td>2.472944e-07</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>dynamic_instability_score</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-0.145140</td>
+      <td>-3.485 to 3.195</td>
+      <td>9.325766e-01</td>
+      <td>9.564889e-01</td>
+      <td>-0.078739</td>
+      <td>6.291334e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>dynamic_instability_score</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>-4.050625</td>
+      <td>-7.946 to -0.1557</td>
+      <td>4.851893e-02</td>
+      <td>7.187989e-02</td>
+      <td>-0.269345</td>
+      <td>9.282275e-02</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>resilience_proxy_score</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>0.510018</td>
+      <td>0.3247 to 0.6954</td>
+      <td>3.859285e-06</td>
+      <td>1.543714e-05</td>
+      <td>0.653283</td>
+      <td>4.882434e-06</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>resilience_proxy_score</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>0.000248</td>
+      <td>0.0001647 to 0.0003314</td>
+      <td>9.647251e-07</td>
+      <td>5.512715e-06</td>
+      <td>0.725328</td>
+      <td>1.195025e-07</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>resilience_proxy_score</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>2.102395</td>
+      <td>1.51 to 2.695</td>
+      <td>2.841647e-08</td>
+      <td>3.788863e-07</td>
+      <td>0.756848</td>
+      <td>1.599716e-08</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>resilience_proxy_score</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-0.264256</td>
+      <td>-2.788 to 2.259</td>
+      <td>8.384749e-01</td>
+      <td>8.826051e-01</td>
+      <td>-0.065788</td>
+      <td>6.867120e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>resilience_proxy_score</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>-3.563119</td>
+      <td>-6.449 to -0.6768</td>
+      <td>2.043074e-02</td>
+      <td>3.405123e-02</td>
+      <td>-0.309859</td>
+      <td>5.168259e-02</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>phase_assignment_distance</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>-0.679373</td>
+      <td>-0.9689 to -0.3898</td>
+      <td>4.608782e-05</td>
+      <td>1.229008e-04</td>
+      <td>-0.589493</td>
+      <td>6.269183e-05</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>phase_assignment_distance</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>-0.000406</td>
+      <td>-0.0005141 to -0.0002983</td>
+      <td>7.629735e-09</td>
+      <td>1.525947e-07</td>
+      <td>-0.769418</td>
+      <td>6.580790e-09</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>phase_assignment_distance</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>-3.326292</td>
+      <td>-4.1 to -2.553</td>
+      <td>3.172049e-10</td>
+      <td>1.268820e-08</td>
+      <td>-0.787054</td>
+      <td>1.715794e-09</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>phase_assignment_distance</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-0.495379</td>
+      <td>-4.196 to 3.205</td>
+      <td>7.944413e-01</td>
+      <td>8.826051e-01</td>
+      <td>-0.034348</td>
+      <td>8.333461e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>phase_assignment_distance</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>6.345916</td>
+      <td>2.27 to 10.42</td>
+      <td>4.142422e-03</td>
+      <td>7.890327e-03</td>
+      <td>0.380246</td>
+      <td>1.550677e-02</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_mean_glucose_mg_dl</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>29.612265</td>
+      <td>20.55 to 38.67</td>
+      <td>1.588666e-07</td>
+      <td>1.270933e-06</td>
+      <td>0.757598</td>
+      <td>1.519371e-08</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_mean_glucose_mg_dl</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>0.011080</td>
+      <td>0.006113 to 0.01605</td>
+      <td>9.204850e-05</td>
+      <td>2.165847e-04</td>
+      <td>0.589306</td>
+      <td>6.311449e-05</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_mean_glucose_mg_dl</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>98.212945</td>
+      <td>62.55 to 133.9</td>
+      <td>3.816573e-06</td>
+      <td>1.543714e-05</td>
+      <td>0.679362</td>
+      <td>1.436225e-06</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_mean_glucose_mg_dl</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-0.957394</td>
+      <td>-134.9 to 133</td>
+      <td>9.888991e-01</td>
+      <td>9.888991e-01</td>
+      <td>0.019708</td>
+      <td>9.039253e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_mean_glucose_mg_dl</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>-195.164614</td>
+      <td>-347.6 to -42.77</td>
+      <td>1.644494e-02</td>
+      <td>2.859989e-02</td>
+      <td>-0.277058</td>
+      <td>8.349378e-02</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_time_in_range_70_180_pct</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>-16.585976</td>
+      <td>-23.78 to -9.391</td>
+      <td>5.906118e-05</td>
+      <td>1.476529e-04</td>
+      <td>-0.610131</td>
+      <td>2.916211e-05</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_time_in_range_70_180_pct</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>-0.007458</td>
+      <td>-0.01087 to -0.004045</td>
+      <td>1.211175e-04</td>
+      <td>2.549842e-04</td>
+      <td>-0.692871</td>
+      <td>7.251242e-07</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_time_in_range_70_180_pct</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>-64.043469</td>
+      <td>-89.19 to -38.89</td>
+      <td>1.365619e-05</td>
+      <td>3.901768e-05</td>
+      <td>-0.727767</td>
+      <td>1.033003e-07</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_time_in_range_70_180_pct</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>18.863666</td>
+      <td>-72.4 to 110.1</td>
+      <td>6.876733e-01</td>
+      <td>8.090274e-01</td>
+      <td>0.050397</td>
+      <td>7.574549e-01</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_time_in_range_70_180_pct</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>108.643571</td>
+      <td>1.765 to 215.5</td>
+      <td>5.355062e-02</td>
+      <td>7.650088e-02</td>
+      <td>0.285649</td>
+      <td>7.397821e-02</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_cv_pct</td>
+      <td>msi_core</td>
+      <td>40</td>
+      <td>3.309502</td>
+      <td>0.9171 to 5.702</td>
+      <td>1.000519e-02</td>
+      <td>1.819126e-02</td>
+      <td>0.422702</td>
+      <td>6.581720e-03</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_cv_pct</td>
+      <td>median_iauc_2h</td>
+      <td>40</td>
+      <td>0.002454</td>
+      <td>0.001519 to 0.003389</td>
+      <td>8.412773e-06</td>
+      <td>2.848813e-05</td>
+      <td>0.657598</td>
+      <td>4.020067e-06</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_cv_pct</td>
+      <td>high_iauc_rate</td>
+      <td>40</td>
+      <td>19.847157</td>
+      <td>12.77 to 26.92</td>
+      <td>2.779689e-06</td>
+      <td>1.389845e-05</td>
+      <td>0.652720</td>
+      <td>5.006653e-06</td>
+      <td>positive</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_cv_pct</td>
+      <td>prop_mixed</td>
+      <td>40</td>
+      <td>-2.914617</td>
+      <td>-29.7 to 23.87</td>
+      <td>8.322247e-01</td>
+      <td>8.826051e-01</td>
+      <td>-0.060814</td>
+      <td>7.093208e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+    <tr>
+      <td>participant_level_ols_bridge</td>
+      <td>cgm_cv_pct</td>
+      <td>prop_rapid_liquid</td>
+      <td>40</td>
+      <td>-26.134343</td>
+      <td>-57.98 to 5.707</td>
+      <td>1.159588e-01</td>
+      <td>1.546117e-01</td>
+      <td>-0.247770</td>
+      <td>1.231966e-01</td>
+      <td>negative</td>
+      <td>compatibility_order_parameter_bridge_not_clinical_phase_validation</td>
+    </tr>
+  </tbody>
+</table></div>
+</article>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+name: phase-map-jaeb-v0-1
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - pandas

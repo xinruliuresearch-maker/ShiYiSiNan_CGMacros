@@ -1,0 +1,1889 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>p0_food_plasticizer_sampling_frame_96</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --paper: #fffefa;
+  --ink: #1f2724;
+  --muted: #5d6762;
+  --line: #dad7cf;
+  --accent: #1f6f64;
+  --accent-soft: #dfeeea;
+  --warn: #8b4d12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+aside {
+  border-right: 1px solid var(--line);
+  background: #f0eee7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+aside h1 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+aside p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+aside a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+aside a:hover { background: var(--accent-soft); color: var(--accent); }
+main {
+  padding: 34px min(7vw, 80px) 80px;
+}
+article {
+  max-width: 980px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px min(6vw, 64px);
+  box-shadow: 0 12px 40px rgba(31, 39, 36, 0.08);
+}
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 23px;
+  margin: 34px 0 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  color: var(--accent);
+}
+h4 { font-size: 15px; margin: 18px 0 8px; }
+p { margin: 10px 0; }
+ul, ol { margin: 8px 0 16px 22px; padding: 0; }
+li { margin: 4px 0; }
+code {
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  background: #ece8df;
+  border: 1px solid #ded7c9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+pre {
+  overflow: auto;
+  background: #202824;
+  color: #f5f2e9;
+  border-radius: 8px;
+  padding: 16px;
+}
+pre code { background: transparent; border: 0; padding: 0; color: inherit; }
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #233d38;
+}
+.source-path {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -14px 0 24px;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+}
+th { background: #ede9de; text-align: left; }
+tr:nth-child(even) td { background: #fbfaf6; }
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.figure-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.figure-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.figure-card h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--warn);
+  background: #f7eadc;
+  border: 1px solid #ebd1b6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; }
+  main { padding: 20px; }
+  article { padding: 24px 18px; }
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Nature Food 渲染预览</h1>
+      <p>这些页面由 Markdown、CSV 和主图文件生成，用于阅读、审稿前检查和投稿材料整理。</p>
+      <h4>主图</h4>
+<a href="nature_food_main_figures.html">六张主图预览</a>
+<h4>文档</h4>
+<a href="NatureFood_next_tasks_to_publication_zh_2026_06_18.html">NatureFood_next_tasks_to_publication_zh_2026_06_18.md</a>
+<a href="NatureFood_next_stage_completion_report_zh.html">NatureFood_next_stage_completion_report_zh.md</a>
+<a href="NatureFood_presubmission_enquiry_v1.0.html">NatureFood_presubmission_enquiry_v1.0.md</a>
+<a href="NatureFood_150_word_abstract_v1.0.html">NatureFood_150_word_abstract_v1.0.md</a>
+<a href="NatureFood_analysis_manuscript_skeleton_v0.1.html">NatureFood_analysis_manuscript_skeleton_v0.1.md</a>
+<a href="Reviewer_risk_response_memo_v1.0.html">Reviewer_risk_response_memo_v1.0.md</a>
+<a href="Aim1_claim_guardrails.html">Aim1_claim_guardrails.md</a>
+<a href="Aim2_Aim3_phase_bridge_guardrails.html">Aim2_Aim3_phase_bridge_guardrails.md</a>
+<a href="Aim4_bridge_cohort_pilot_synopsis.html">Aim4_bridge_cohort_pilot_synopsis.md</a>
+<a href="nature_food_next_stage_task_design_zh.html">nature_food_next_stage_task_design_zh.md</a>
+<a href="p0_claim_hierarchy_and_abstract_zh.html">p0_claim_hierarchy_and_abstract_zh.md</a>
+<a href="p0_completion_report_zh.html">p0_completion_report_zh.md</a>
+<a href="aim2_matrix_adjudication_protocol.html">aim2_matrix_adjudication_protocol.md</a>
+<a href="aim3_digital_phenotype_framing_zh.html">aim3_digital_phenotype_framing_zh.md</a>
+<a href="NatureFood_figure_legends_v0.1.html">NatureFood_figure_legends_v0.1.md</a>
+<h4>表格</h4>
+<a href="NatureFood_next_tasks_to_publication_matrix_2026_06_18.html">NatureFood_next_tasks_to_publication_matrix_2026_06_18.csv</a>
+<a href="NatureFood_publication_decision_gates_2026_06_18.html">NatureFood_publication_decision_gates_2026_06_18.csv</a>
+<a href="NatureFood_route_decision_memo.html">NatureFood_route_decision_memo.csv</a>
+<a href="Aim1_source_proxy_to_DEHP_and_metabolic_anchor.html">Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</a>
+<a href="Aim1_food_plasticizer_panel_literature_extraction_schema.html">Aim1_food_plasticizer_panel_literature_extraction_schema.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_dataset.html">Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_models.html">Aim2_Aim3_CGMacros_phase_bridge_models.csv</a>
+<a href="nature_food_next_stage_task_matrix.html">nature_food_next_stage_task_matrix.csv</a>
+<a href="nature_food_decision_gates.html">nature_food_decision_gates.csv</a>
+<a href="p0_claim_hierarchy.html">p0_claim_hierarchy.csv</a>
+<a href="p0_aim1_food_system_exposure_matrix.html">p0_aim1_food_system_exposure_matrix.csv</a>
+<a href="p0_food_plasticizer_measurement_panel.html">p0_food_plasticizer_measurement_panel.csv</a>
+<a href="p0_food_plasticizer_sampling_frame_96.html">p0_food_plasticizer_sampling_frame_96.csv</a>
+<a href="p0_six_display_item_plan.html">p0_six_display_item_plan.csv</a>
+<a href="p0_reviewer_risk_memo.html">p0_reviewer_risk_memo.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_feasibility.html">p0_aim2_cgmacros_phase_map_feasibility.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_assignment.html">p0_aim2_cgmacros_phase_map_assignment.csv</a>
+<a href="p0_aim3_digital_phenotype_evidence.html">p0_aim3_digital_phenotype_evidence.csv</a>
+<a href="p0_software_reproducibility_audit.html">p0_software_reproducibility_audit.csv</a>
+    </aside>
+    <main>
+      <article>
+<h1>p0_food_plasticizer_sampling_frame_96<span class="badge">96 rows</span></h1>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\tables\p0_food_plasticizer_sampling_frame_96.csv</div>
+<div class="table-wrap"><table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sample_id</th>
+      <th>stratum_id</th>
+      <th>food_system_stratum</th>
+      <th>example_item</th>
+      <th>matrix_collapsed3</th>
+      <th>packaging_contact</th>
+      <th>processing_level</th>
+      <th>fat_level</th>
+      <th>physical_form</th>
+      <th>plastic_heat_contact</th>
+      <th>planned_replicate</th>
+      <th>target_status</th>
+      <th>measure_parent_plasticizers</th>
+      <th>measure_food_macros</th>
+      <th>primary_contrast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NF-A1-S01-01</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-02</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-03</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-04</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-05</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-06</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-07</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S01-08</td>
+      <td>S01</td>
+      <td>fresh whole-food control</td>
+      <td>apple/banana/whole vegetables</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>none_or_paper</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-01</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-02</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-03</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-04</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-05</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-06</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-07</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S02-08</td>
+      <td>S02</td>
+      <td>whole-grain or legume packaged</td>
+      <td>whole-grain bread/legume bowl</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_film_or_bowl</td>
+      <td>processed</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-01</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-02</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-03</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-04</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-05</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-06</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-07</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S03-08</td>
+      <td>S03</td>
+      <td>high-fat dairy plastic-packaged</td>
+      <td>yogurt/cream dessert</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_cup</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>semi_solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-01</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-02</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-03</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-04</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-05</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-06</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-07</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S04-08</td>
+      <td>S04</td>
+      <td>processed meat or cheese</td>
+      <td>deli meat/cheese</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_vacuum_pack</td>
+      <td>processed</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-01</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-02</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-03</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-04</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-05</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-06</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-07</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S05-08</td>
+      <td>S05</td>
+      <td>takeaway hot meal plastic contact</td>
+      <td>rice/noodle/meat bowl</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>polypropylene_takeaway</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>hot_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-01</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-02</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-03</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-04</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-05</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-06</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-07</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S06-08</td>
+      <td>S06</td>
+      <td>microwave-ready plastic tray</td>
+      <td>frozen entree</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_tray</td>
+      <td>ultra_processed_like</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>heated_in_package</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-01</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-02</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-03</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-04</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-05</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-06</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-07</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S07-08</td>
+      <td>S07</td>
+      <td>refined starch packaged</td>
+      <td>white bread/crackers/noodles</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-01</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-02</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-03</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-04</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-05</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-06</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-07</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S08-08</td>
+      <td>S08</td>
+      <td>sweetened beverage PET</td>
+      <td>sweetened tea/soda/sports drink</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>PET_bottle</td>
+      <td>ultra_processed_like</td>
+      <td>low</td>
+      <td>liquid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-01</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-02</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-03</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-04</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-05</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-06</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-07</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S09-08</td>
+      <td>S09</td>
+      <td>hot beverage plastic-lid contact</td>
+      <td>takeaway coffee/milk tea</td>
+      <td>rapid_digestible_or_liquid_carb</td>
+      <td>coated_cup_plastic_lid</td>
+      <td>restaurant_processed</td>
+      <td>medium</td>
+      <td>liquid</td>
+      <td>hot_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-01</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-02</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-03</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-04</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-05</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-06</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-07</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S10-08</td>
+      <td>S10</td>
+      <td>ready-to-eat salad plastic bowl</td>
+      <td>salad/fruit cup</td>
+      <td>protective_whole_food_or_low_carb</td>
+      <td>plastic_bowl</td>
+      <td>minimally_processed</td>
+      <td>low</td>
+      <td>mixed</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-01</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-02</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-03</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-04</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-05</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-06</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-07</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S11-08</td>
+      <td>S11</td>
+      <td>oily snack plastic-packaged</td>
+      <td>chips/pastry</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>plastic_film</td>
+      <td>ultra_processed_like</td>
+      <td>high</td>
+      <td>solid</td>
+      <td>no_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-01</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>1</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-02</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>2</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-03</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>3</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-04</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>4</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-05</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>5</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-06</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>6</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-07</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>7</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+    <tr>
+      <td>NF-A1-S12-08</td>
+      <td>S12</td>
+      <td>freshly prepared low-packaging matched meal</td>
+      <td>rice/pasta/protein cooked in glass/steel</td>
+      <td>mixed_buffered_or_unknown</td>
+      <td>glass_or_steel</td>
+      <td>home_prepared</td>
+      <td>medium</td>
+      <td>mixed</td>
+      <td>no_plastic_heat_contact</td>
+      <td>8</td>
+      <td>to_collect</td>
+      <td>DEHP; DiNP; DiDP; DBP; DiBP; BBzP; DINCH; DEHT</td>
+      <td>energy; carbohydrate; sugars; fiber; protein; fat; moisture</td>
+      <td>packaging/processing/matrix gradient</td>
+    </tr>
+  </tbody>
+</table></div>
+</article>
+    </main>
+  </div>
+</body>
+</html>

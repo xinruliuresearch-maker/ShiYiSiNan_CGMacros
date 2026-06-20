@@ -1,0 +1,36 @@
+{
+  "created": "2026-06-18",
+  "objective": "P0 extension workup for npj Digital Medicine submission readiness",
+  "outputs": [
+    {
+      "deliverable": "compatibility_matrix",
+      "status": "complete",
+      "primary_output": "tables/jaeb_public_extra_compatibility_matrix.csv"
+    },
+    {
+      "deliverable": "secondary_frozen_validation",
+      "status": "complete",
+      "primary_output": "tables/secondary_external_validation_metrics.csv"
+    },
+    {
+      "deliverable": "calibration_upgrade",
+      "status": "complete",
+      "primary_output": "tables/loop_loso_calibration_upgrade_metrics.csv"
+    },
+    {
+      "deliverable": "tir_recalibration_sensitivity",
+      "status": "complete",
+      "primary_output": "tables/tir_recalibration_sensitivity.csv"
+    },
+    {
+      "deliverable": "subgroup_uncertainty_ci",
+      "status": "complete",
+      "primary_output": "tables/subgroup_fairness_calibration_audit_with_bootstrap_ci.csv"
+    },
+    {
+      "deliverable": "software_release",
+      "status": "complete",
+      "primary_output": "software_release/phase_map_jaeb_v0_1"
+    }
+  ]
+}

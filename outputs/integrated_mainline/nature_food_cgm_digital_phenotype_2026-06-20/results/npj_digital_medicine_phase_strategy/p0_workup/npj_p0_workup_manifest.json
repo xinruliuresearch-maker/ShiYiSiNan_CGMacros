@@ -1,0 +1,25 @@
+{
+  "outputs": [
+    "docs\\npj_p0_workup_completion_report.md",
+    "docs\\phase_map_algorithm_card.md",
+    "docs\\phase_map_software_specification.md",
+    "figure_source_data\\digital_care_workflow_edges.csv",
+    "figure_source_data\\digital_care_workflow_nodes.csv",
+    "figure_source_data\\loop_frozen_phase_distribution.csv",
+    "figure_source_data\\phase_guided_care_workflow_summary.csv",
+    "figures\\figure1_cgm_digital_phenotype.png",
+    "figures\\figure2_phenotype_validity.png",
+    "figures\\figure3_validation_and_fairness.png",
+    "figures\\figure4_clinical_utility_workflow.png",
+    "npj_p0_workup_manifest.json",
+    "npj_p0_workup_status.csv",
+    "tables\\frozen_external_validation_inventory.csv",
+    "tables\\loop_frozen_external_validation_dataset.csv",
+    "tables\\loop_frozen_external_validation_metrics.csv",
+    "tables\\loop_frozen_external_validation_predictions.csv",
+    "tables\\phase_map_input_schema.csv",
+    "tables\\phase_map_output_schema.csv",
+    "tables\\subgroup_fairness_calibration_audit.csv"
+  ],
+  "frozen_validation_dataset": "Loop study public dataset 2023-01-31.zip"
+}

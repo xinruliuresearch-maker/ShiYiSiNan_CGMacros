@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nature_food_next_stage_task_matrix</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --paper: #fffefa;
+  --ink: #1f2724;
+  --muted: #5d6762;
+  --line: #dad7cf;
+  --accent: #1f6f64;
+  --accent-soft: #dfeeea;
+  --warn: #8b4d12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+aside {
+  border-right: 1px solid var(--line);
+  background: #f0eee7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+aside h1 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+aside p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+aside a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+aside a:hover { background: var(--accent-soft); color: var(--accent); }
+main {
+  padding: 34px min(7vw, 80px) 80px;
+}
+article {
+  max-width: 980px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px min(6vw, 64px);
+  box-shadow: 0 12px 40px rgba(31, 39, 36, 0.08);
+}
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 24px;
+}
+h2 {
+  font-size: 23px;
+  margin: 34px 0 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+h3 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  color: var(--accent);
+}
+h4 { font-size: 15px; margin: 18px 0 8px; }
+p { margin: 10px 0; }
+ul, ol { margin: 8px 0 16px 22px; padding: 0; }
+li { margin: 4px 0; }
+code {
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  background: #ece8df;
+  border: 1px solid #ded7c9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+pre {
+  overflow: auto;
+  background: #202824;
+  color: #f5f2e9;
+  border-radius: 8px;
+  padding: 16px;
+}
+pre code { background: transparent; border: 0; padding: 0; color: inherit; }
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: #233d38;
+}
+.source-path {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -14px 0 24px;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+}
+th { background: #ede9de; text-align: left; }
+tr:nth-child(even) td { background: #fbfaf6; }
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.figure-card {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.figure-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+.figure-card h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--warn);
+  background: #f7eadc;
+  border: 1px solid #ebd1b6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; }
+  main { padding: 20px; }
+  article { padding: 24px 18px; }
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Nature Food 渲染预览</h1>
+      <p>这些页面由 Markdown、CSV 和主图文件生成，用于阅读、审稿前检查和投稿材料整理。</p>
+      <h4>主图</h4>
+<a href="nature_food_main_figures.html">六张主图预览</a>
+<h4>文档</h4>
+<a href="NatureFood_next_tasks_to_publication_zh_2026_06_18.html">NatureFood_next_tasks_to_publication_zh_2026_06_18.md</a>
+<a href="NatureFood_next_stage_completion_report_zh.html">NatureFood_next_stage_completion_report_zh.md</a>
+<a href="NatureFood_presubmission_enquiry_v1.0.html">NatureFood_presubmission_enquiry_v1.0.md</a>
+<a href="NatureFood_150_word_abstract_v1.0.html">NatureFood_150_word_abstract_v1.0.md</a>
+<a href="NatureFood_analysis_manuscript_skeleton_v0.1.html">NatureFood_analysis_manuscript_skeleton_v0.1.md</a>
+<a href="Reviewer_risk_response_memo_v1.0.html">Reviewer_risk_response_memo_v1.0.md</a>
+<a href="Aim1_claim_guardrails.html">Aim1_claim_guardrails.md</a>
+<a href="Aim2_Aim3_phase_bridge_guardrails.html">Aim2_Aim3_phase_bridge_guardrails.md</a>
+<a href="Aim4_bridge_cohort_pilot_synopsis.html">Aim4_bridge_cohort_pilot_synopsis.md</a>
+<a href="nature_food_next_stage_task_design_zh.html">nature_food_next_stage_task_design_zh.md</a>
+<a href="p0_claim_hierarchy_and_abstract_zh.html">p0_claim_hierarchy_and_abstract_zh.md</a>
+<a href="p0_completion_report_zh.html">p0_completion_report_zh.md</a>
+<a href="aim2_matrix_adjudication_protocol.html">aim2_matrix_adjudication_protocol.md</a>
+<a href="aim3_digital_phenotype_framing_zh.html">aim3_digital_phenotype_framing_zh.md</a>
+<a href="NatureFood_figure_legends_v0.1.html">NatureFood_figure_legends_v0.1.md</a>
+<h4>表格</h4>
+<a href="NatureFood_next_tasks_to_publication_matrix_2026_06_18.html">NatureFood_next_tasks_to_publication_matrix_2026_06_18.csv</a>
+<a href="NatureFood_publication_decision_gates_2026_06_18.html">NatureFood_publication_decision_gates_2026_06_18.csv</a>
+<a href="NatureFood_route_decision_memo.html">NatureFood_route_decision_memo.csv</a>
+<a href="Aim1_source_proxy_to_DEHP_and_metabolic_anchor.html">Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</a>
+<a href="Aim1_food_plasticizer_panel_literature_extraction_schema.html">Aim1_food_plasticizer_panel_literature_extraction_schema.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_dataset.html">Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</a>
+<a href="Aim2_Aim3_CGMacros_phase_bridge_models.html">Aim2_Aim3_CGMacros_phase_bridge_models.csv</a>
+<a href="nature_food_next_stage_task_matrix.html">nature_food_next_stage_task_matrix.csv</a>
+<a href="nature_food_decision_gates.html">nature_food_decision_gates.csv</a>
+<a href="p0_claim_hierarchy.html">p0_claim_hierarchy.csv</a>
+<a href="p0_aim1_food_system_exposure_matrix.html">p0_aim1_food_system_exposure_matrix.csv</a>
+<a href="p0_food_plasticizer_measurement_panel.html">p0_food_plasticizer_measurement_panel.csv</a>
+<a href="p0_food_plasticizer_sampling_frame_96.html">p0_food_plasticizer_sampling_frame_96.csv</a>
+<a href="p0_six_display_item_plan.html">p0_six_display_item_plan.csv</a>
+<a href="p0_reviewer_risk_memo.html">p0_reviewer_risk_memo.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_feasibility.html">p0_aim2_cgmacros_phase_map_feasibility.csv</a>
+<a href="p0_aim2_cgmacros_phase_map_assignment.html">p0_aim2_cgmacros_phase_map_assignment.csv</a>
+<a href="p0_aim3_digital_phenotype_evidence.html">p0_aim3_digital_phenotype_evidence.csv</a>
+<a href="p0_software_reproducibility_audit.html">p0_software_reproducibility_audit.csv</a>
+    </aside>
+    <main>
+      <article>
+<h1>nature_food_next_stage_task_matrix<span class="badge">24 rows</span></h1>
+<div class="source-path">Source: D:\ai for science\results\nature_food_p0_publication_lift_2026_06_18\tables\nature_food_next_stage_task_matrix.csv</div>
+<div class="table-wrap"><table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>task_id</th>
+      <th>phase</th>
+      <th>priority</th>
+      <th>workstream</th>
+      <th>task</th>
+      <th>deliverable</th>
+      <th>acceptance_criteria</th>
+      <th>decision_if_failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NF-N1-01</td>
+      <td>Week 1</td>
+      <td>P0</td>
+      <td>Submission strategy</td>
+      <td>Choose Analysis-now versus Article-after-Aim4 route</td>
+      <td>NatureFood_route_decision_memo.md</td>
+      <td>Route decision states claims allowed and claims prohibited</td>
+      <td>Default to Analysis with explicit triangulation</td>
+    </tr>
+    <tr>
+      <td>NF-N1-02</td>
+      <td>Week 1</td>
+      <td>P0</td>
+      <td>Presubmission pitch</td>
+      <td>Draft title plus 150-word abstract and one-page enquiry</td>
+      <td>NatureFood_presubmission_enquiry_v0.1.md</td>
+      <td>First page foregrounds food systems human nutrition and information technology fit</td>
+      <td>Rewrite away from ML benchmark framing</td>
+    </tr>
+    <tr>
+      <td>NF-N1-03</td>
+      <td>Week 1</td>
+      <td>P0</td>
+      <td>Claim hierarchy</td>
+      <td>Label every claim as direct triangulated model-based or bridge-needed</td>
+      <td>NatureFood_claim_hierarchy_locked.csv</td>
+      <td>No main-text claim lacks evidence status</td>
+      <td>Move unsupported claims to bridge cohort rationale</td>
+    </tr>
+    <tr>
+      <td>NF-N2-01</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 1 integrated architecture from direct and missing edges</td>
+      <td>Figure1_integrated_architecture.png; source CSV</td>
+      <td>Figure can explain study without dataset-stapling</td>
+      <td>Revise claim order before building other figures</td>
+    </tr>
+    <tr>
+      <td>NF-N2-02</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 2 population exposure anchor</td>
+      <td>Figure2_population_exposure_anchor.png; source CSV</td>
+      <td>Shows source proxies plus DEHP oxidative profile plus MSI/HOMA/HbA1c</td>
+      <td>Move weak source proxies to Extended Data</td>
+    </tr>
+    <tr>
+      <td>NF-N2-03</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 3 meal-expression layer</td>
+      <td>Figure3_meal_expression_layer.png; source CSV</td>
+      <td>Shows MSI food matrix PPGR and subject leverage</td>
+      <td>Keep only strongest matrix contrasts</td>
+    </tr>
+    <tr>
+      <td>NF-N2-04</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 4 redesign and phase compatibility</td>
+      <td>Figure4_meal_redesign_phase_compatibility.png; source CSV</td>
+      <td>Counterfactual and phase compatibility are visually separated</td>
+      <td>If phase distribution too narrow use order parameters only</td>
+    </tr>
+    <tr>
+      <td>NF-N2-05</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 5 CGM digital phenotype validation</td>
+      <td>Figure5_cgm_digital_phenotype_validation.png; source CSV</td>
+      <td>Shows stability external validation calibration/fairness</td>
+      <td>Use phenotype/ranking framing if calibration weak</td>
+    </tr>
+    <tr>
+      <td>NF-N2-06</td>
+      <td>Week 2</td>
+      <td>P0</td>
+      <td>Main figures</td>
+      <td>Build Figure 6 bridge cohort workflow</td>
+      <td>Figure6_bridge_cohort_workflow.png; source CSV</td>
+      <td>Shows urine food assay standard meals CGM and software report</td>
+      <td>Use as future-work figure for Analysis route</td>
+    </tr>
+    <tr>
+      <td>NF-N3-01</td>
+      <td>Week 3</td>
+      <td>P0</td>
+      <td>Aim 1</td>
+      <td>Select source-oriented NHANES results for main and Extended Data</td>
+      <td>Aim1_source_proxy_to_DEHP_and_metabolic_anchor.csv</td>
+      <td>Food-system context is clear and not overstated</td>
+      <td>Restrict to DEHP oxidative anchor and move proxy results to supplement</td>
+    </tr>
+    <tr>
+      <td>NF-N3-02</td>
+      <td>Week 3</td>
+      <td>P0</td>
+      <td>Aim 1</td>
+      <td>Create literature extraction schema for food plasticizer measurement panel</td>
+      <td>Aim1_food_plasticizer_panel_literature_extraction_schema.csv</td>
+      <td>Schema captures source food category packaging analyte concentration unit and mapping confidence</td>
+      <td>Do not claim measured food burden in current manuscript</td>
+    </tr>
+    <tr>
+      <td>NF-N3-03</td>
+      <td>Week 3</td>
+      <td>P0</td>
+      <td>Aim 1</td>
+      <td>Write food-system exposure guardrails</td>
+      <td>Aim1_claim_guardrails.md</td>
+      <td>Text distinguishes urinary biomarkers source proxies and planned food assays</td>
+      <td>Remove food concentration language if no assay data</td>
+    </tr>
+    <tr>
+      <td>NF-N4-01</td>
+      <td>Week 4</td>
+      <td>P0</td>
+      <td>Aim 2 to Aim 3 bridge</td>
+      <td>Merge CGMacros phase assignment with MSI PPGR and matrix data</td>
+      <td>Aim2_Aim3_CGMacros_phase_bridge_dataset.csv</td>
+      <td>All 40 subjects link to MSI/PPGR summaries and phase outputs</td>
+      <td>Use participant-level summaries if meal-level linkage is noisy</td>
+    </tr>
+    <tr>
+      <td>NF-N4-02</td>
+      <td>Week 4</td>
+      <td>P0</td>
+      <td>Aim 2 to Aim 3 bridge</td>
+      <td>Model phase order parameters against MSI PPGR and food matrix</td>
+      <td>Aim2_Aim3_CGMacros_phase_bridge_models.csv</td>
+      <td>Reports continuous order-parameter associations with guardrails</td>
+      <td>Use descriptive compatibility only if power is inadequate</td>
+    </tr>
+    <tr>
+      <td>NF-N4-03</td>
+      <td>Week 4</td>
+      <td>P0</td>
+      <td>Aim 2 to Aim 3 bridge</td>
+      <td>Write phase compatibility audit and guardrails</td>
+      <td>Aim2_Aim3_phase_bridge_guardrails.md</td>
+      <td>States compatibility audit not clinical phase validation</td>
+      <td>Remove phase claims from main text if reviewers may misread</td>
+    </tr>
+    <tr>
+      <td>NF-N5-01</td>
+      <td>Week 5</td>
+      <td>P0/P1</td>
+      <td>Software package</td>
+      <td>Extend phase-map package to integrated phenotype package</td>
+      <td>integrated_food_cgm_phenotype_v0.1</td>
+      <td>Package outputs MSI meal-risk and phase-map on toy data</td>
+      <td>Keep phase-map-only package and document integrated package as prototype</td>
+    </tr>
+    <tr>
+      <td>NF-N5-02</td>
+      <td>Week 5</td>
+      <td>P0/P1</td>
+      <td>Software package</td>
+      <td>Add integrated schema toy data and unit tests</td>
+      <td>schemas and tests</td>
+      <td>Unit tests pass from clean directory</td>
+      <td>Do not advertise software as release-ready</td>
+    </tr>
+    <tr>
+      <td>NF-N6-01</td>
+      <td>Week 6</td>
+      <td>P0</td>
+      <td>Presubmission</td>
+      <td>Prepare Nature Food presubmission enquiry v1</td>
+      <td>NatureFood_presubmission_enquiry_v1.0.md</td>
+      <td>One-page pitch asks whether Analysis is in scope</td>
+      <td>Redirect to Nature Communications or digital nutrition journals if not encouraged</td>
+    </tr>
+    <tr>
+      <td>NF-N6-02</td>
+      <td>Week 6</td>
+      <td>P0</td>
+      <td>Manuscript skeleton</td>
+      <td>Draft Analysis manuscript skeleton</td>
+      <td>NatureFood_analysis_manuscript_skeleton_v0.1.md</td>
+      <td>Matches six figures and 3000-word main-text logic</td>
+      <td>Delay full manuscript until figure story is stable</td>
+    </tr>
+    <tr>
+      <td>NF-N6-03</td>
+      <td>Week 6</td>
+      <td>P0</td>
+      <td>Reviewer defense</td>
+      <td>Upgrade reviewer risk memo to response memo</td>
+      <td>Reviewer_risk_response_memo_v1.0.md</td>
+      <td>Every major risk has a wording response and analysis response</td>
+      <td>Drop or soften claims with no defensible response</td>
+    </tr>
+    <tr>
+      <td>NF-A4-01</td>
+      <td>Parallel P1</td>
+      <td>P1</td>
+      <td>Bridge cohort</td>
+      <td>Prepare IRB-ready bridge cohort protocol</td>
+      <td>Aim4_bridge_cohort_protocol_v1.md</td>
+      <td>Protocol measures urine food-contact assays standard meals CGM and metabolic markers</td>
+      <td>If IRB delayed prepare pilot feasibility protocol</td>
+    </tr>
+    <tr>
+      <td>NF-A4-02</td>
+      <td>Parallel P1</td>
+      <td>P1</td>
+      <td>Standard meals</td>
+      <td>Design 2x2 matrix by food-contact standard meal challenge</td>
+      <td>Aim4_standard_meal_SOP_and_menu.csv</td>
+      <td>Meals are matched for energy and carbohydrate with documented matrix/contact contrast</td>
+      <td>Reduce to two highest-value contrasts for pilot</td>
+    </tr>
+    <tr>
+      <td>NF-A4-03</td>
+      <td>Parallel P1</td>
+      <td>P1</td>
+      <td>Lab assay</td>
+      <td>Confirm plasticizer panel vendor methods cost and sample handling</td>
+      <td>Aim4_plasticizer_lab_assay_plan.md</td>
+      <td>Plan includes analytes units QC blanks duplicates spikes and storage</td>
+      <td>Limit Article claim until assay feasibility confirmed</td>
+    </tr>
+    <tr>
+      <td>NF-A4-04</td>
+      <td>Parallel P1</td>
+      <td>P1</td>
+      <td>Pilot</td>
+      <td>Run 20-30 person feasibility pilot</td>
+      <td>Aim4_pilot_feasibility_report.csv</td>
+      <td>Pilot shows sample collection meal adherence CGM quality and measurable exposure contrast</td>
+      <td>Use pilot as presubmission update not main Article evidence</td>
+    </tr>
+  </tbody>
+</table></div>
+</article>
+    </main>
+  </div>
+</body>
+</html>

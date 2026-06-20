@@ -1,0 +1,29 @@
+{
+  "root": "D:\\ai for science\\results\\nature_food_high_bar_aims",
+  "files": [
+    "aim1_food_plasticizer_sampling_frame_96_samples.csv",
+    "aim1_food_system_exposure_chain_edges.csv",
+    "aim1_food_system_exposure_chain_nodes.csv",
+    "aim1_nhanes_dehp_msi_anchor_locked.csv",
+    "aim1_plasticizer_measurement_panel.csv",
+    "aim2_collapsed_matrix_locked.csv",
+    "aim2_existing_cgmacros_msi_ppgr_locked.csv",
+    "aim2_standard_meal_challenge_menu_2x2.csv",
+    "aim2_subject_leverage_locked.csv",
+    "aim3_equal_carb_energy_meal_prototype_pairs_16.csv",
+    "docs\\aim1_analysis_plan.md",
+    "docs\\aim1_food_plasticizer_lab_assay_brief.md",
+    "docs\\aim1_food_system_exposure_chain_figure.md",
+    "docs\\aim2_cgm_pilot_protocol.md",
+    "docs\\aim2_statistical_analysis_plan.md",
+    "docs\\aim3_human_pilot_validation_plan.md",
+    "docs\\aim3_infogest_digestion_sop.md",
+    "docs\\nature_food_go_no_go_memo.md",
+    "docs\\nature_food_high_bar_aims_completion_report_zh.md",
+    "nature_food_high_bar_aims_task_status.csv",
+    "templates\\aim1_food_sample_metadata_template.csv",
+    "templates\\aim2_cgm_pilot_case_report_form_template.csv",
+    "templates\\aim3_infogest_glucose_release_data_template.csv"
+  ],
+  "note": "Experimental result templates are intentionally blank until new lab/human data are collected."
+}

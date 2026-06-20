@@ -1,0 +1,16 @@
+{
+  "created": "2026-06-18",
+  "objective": "npj Digital Medicine current results synthesis and next research plan",
+  "source_roots": [
+    "D:\\ai for science\\results\\jaeb_glycemic_phase_completion",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\p0_workup"
+  ],
+  "outputs": [
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\docs\\npj_current_results_and_research_plan_zh.md",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\tables\\current_results_evidence_table.csv",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\tables\\npj_gap_matrix.csv",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\tables\\npj_90_180_day_workplan.csv",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\tables\\npj_go_no_go_criteria.csv",
+    "D:\\ai for science\\results\\npj_digital_medicine_phase_strategy\\research_plan_2026_06_18\\tables\\npj_manuscript_storyboard.csv"
+  ]
+}

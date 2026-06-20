@@ -1,0 +1,17 @@
+{
+  "outputs": [
+    "aim1_cycle_directional_consistency.csv",
+    "aim3_counterfactual_meal_redesign_candidates.csv",
+    "aim3_loso_model_ladder_metrics.csv",
+    "aim3_loso_oof_predictions.csv",
+    "figures\\nature_food_bridge_and_aim3_ladder.png",
+    "figures\\nature_food_readiness_dashboard.png",
+    "nature_food_cross_dataset_evidence_bridge.csv",
+    "nature_food_next_stage_execution_memo_zh.md",
+    "nature_food_next_task_board.csv",
+    "nature_food_readiness_dashboard.csv"
+  ],
+  "n_bridge_rows": 31,
+  "n_task_rows": 9,
+  "n_redesign_candidates": 40
+}

@@ -1,0 +1,13 @@
+{
+  "outputs": [
+    "aim2_collapsed3_food_matrix_gee_results.csv",
+    "aim2_collapsed3_food_matrix_summary.csv",
+    "aim2_loso_subject_leverage_effects.csv",
+    "aim2_loso_subject_leverage_stability.csv",
+    "aim3_counterfactual_high_iauc_prediction_deltas.csv",
+    "nature_food_p0_robustness_report_zh.md"
+  ],
+  "n_rows": 1498,
+  "n_subjects": 40,
+  "n_counterfactual_deltas": 40
+}
