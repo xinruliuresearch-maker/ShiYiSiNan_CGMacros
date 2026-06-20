@@ -1,6 +1,6 @@
 # Project Organization Map
 
-Generated: 2026-06-20 19:02:25
+Generated: 2026-06-20 21:04:40
 
 This folder is organized around a reproducible dry-lab research project linking
 CGMacros meal-level glycemic responses, NHANES/exposome evidence, external CGM
@@ -26,7 +26,7 @@ validation, mechanism evidence, and journal-ready reporting.
 
 ## Scale Snapshot
 
-- Files indexed: 5,466
+- Files indexed: 5,467
 - Indexed size excluding `.git`: 2.15 GB
 - Largest-file register: `00_PROJECT_ORGANIZATION/05_LARGE_FILE_REGISTER.csv`
 - Full manifest: `00_PROJECT_ORGANIZATION/04_FILE_MANIFEST.csv`

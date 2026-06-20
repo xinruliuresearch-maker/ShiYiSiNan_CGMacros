@@ -9,6 +9,9 @@ CGM phase-map validation into a single publication-oriented research package.
 
 ## Main Entry Points
 
+- `PROJECT_IMPLEMENTATION_RESULTS_SYNTHESIS_zh.md`:
+  Chinese synthesis of implementation steps, current results, research value,
+  significance, limitations and publication logic.
 - `results/nature_food_p0_publication_lift_2026_06_18/preview/index.html`:
   rendered preview entry for the Nature Food package.
 - `results/nature_food_p0_publication_lift_2026_06_18/docs/NatureFood_next_tasks_to_publication_zh_2026_06_18.md`:
